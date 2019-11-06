@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Arina Livanenkova](https://up.htmlacademy.ru/adaptive/18/user/882513).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Котов`.
 
 ---
 
