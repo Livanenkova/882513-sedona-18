@@ -3,27 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта про город Седона">
-      </a>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
         <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-link">Фото и видео</a>
+            <a class="site-link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-link">Форма отзыва</a>
+            <a class="site-link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-link">Html academy</a>
@@ -31,18 +25,30 @@
         </ul>
       </div>
       </nav>
-      <h2 class="page-header__title">СЕДОНА — небольшой  городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!</h2>
+      <button class="main-nav__toggle" type="button">
+          Открыть меню
+      </button>
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта про город Седона">
+      </a>
+      <div class="header-bg">
+      </div>
+      <div class="header-title_wrapper">
+      <h2 class="page-header__title">Седона - небольшой  городок в АРИЗОНЕ, заслуживающий большего!</h2>
       <p class="page-header__text">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      </div>
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">СЕДОНА — небольшой  городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!</h1>
+      <h1 class="visually-hidden">Седона — небольшой  городок в АРИЗОНЕ, заслуживающий большего!</h1>
       <section class="advantages-town">
         <div class="advantages-town__wrapper">
+          <div class="town__wrapper">
           <h3 class="advantages-town__title">Настоящий городок</h3>
           <p>-&#8470;1-</p>
           <p class="advantages-town__discription">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img src="https://via.placeholder.com/150x150" alt="Фотография города седона">
+          </div>
+          <img src="img/main-city-mobile@1x.jpg" alt="Фотография города седона">
           <ul class="advantages-town__list">
             <li class="advantages-town__item advantages-town__item--house">
               <h3 class="advantages-town__item__title">Жилье</h3>
@@ -62,10 +68,12 @@
 
       <section class="advantages-bridge">
         <div class="advantages-bridge__wrapper">
-          <h3 class="advantages-bridge__title">Там есть мост дьявола</h3>
-          <p>-&#8470;2-</p>
-          <p class="advantages-bridge__discription">Да, по нему можно пройти!Если вы осмелитесь,конечно.</p>
-          <img src="https://via.placeholder.com/150x150" alt="Фотография моста дьявола">
+          <div class="bridge__wrapper">
+            <h3 class="advantages-bridge__title">Там есть мост дьявола</h3>
+            <p>-&#8470;2-</p>
+            <p class="advantages-bridge__discription">Да, по нему можно пройти!Если вы осмелитесь,конечно.</p>
+          </div>
+          <img src="img/main-bridge-mobile@1x.jpg" alt="Фотография моста дьявола">
           <ul class="advantages-bridge__list">
             <li class="advantages-bridge__item">
             <h3 class="advantages-bridge__item__title">Небольшая площадь</h3>
@@ -98,21 +106,21 @@
     </main>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img  class="map-img" src="https://via.placeholder.com/320x350" alt="Карта">
+      <img  class="map-img" src="img/bg-map-mobile@1x.jpg" alt="Карта">
     </section>
 
     <footer class="page-footer">
       <h3 class="footer-title">#visitsedona</h3>
-      <div class="footer__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"> Мы в Твиттере</a>
+      <div class="footer-social">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link link-twitter" href="https://twitter.com/htmlacademy_ru"> Мы в Твиттере</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">мы в Фейсбуке</a>
+        <li class="social-item">
+          <a class="social-link link-facebook" href="https://www.facebook.com/htmlacademy">мы в Фейсбуке</a>
         </li>
-          <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">мы в Ютубе</a>
+          <li class="social-item">
+          <a class="social-link link-youtube" href="https://www.youtube.com/user/htmlacademyru">мы в Ютубе</a>
         </li>
       </ul>
         <div class="page-footer__copyright copyright">
