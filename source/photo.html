@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Седона</title>
-</head>
-<body>
-      <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта про город Седона">
-      </a>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
         <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-link">Фото и видео</a>
+            <a class="site-link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-link">Форма отзыва</a>
+            <a class="site-link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-link">Html academy</a>
@@ -30,63 +25,81 @@
         </ul>
       </div>
       </nav>
-      <h2 class="page-header__title">Фото и видео</h2>
-      <p class="page-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <button class="main-nav__toggle" type="button">
+          Открыть меню
+      </button>
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта про город Седона">
+      </a>
+      <div class="header-bg">
+      </div>
+      <div class="header-title_wrapper">
+      <h2 class="page-header__title">Фото и Видео</h2>
+      <p class="page-header__text">Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экномике</p>
+      </div>
     </header>
     <main class="main-photo">
       <div class="main-wrapper">
         <div class="photo-wrapper">
-          <img class="photo" src="https://via.placeholder.com/280x280" alt="Фотография дороги" >
+          <img class="photo" src="img/photo-sunset-mobile@1x.jpg" alt="Фотография дороги" >
+          <div class="text__wrapper">
           <h3 class="photo-title">Неродные просторы</h3>
           <small class="photo-text">Автор фото: Борис</small>
           <p class="photo-number photo-number--like">1330</p>
         </div>
+        </div>
         <div class="photo-wrapper">
-          <img class="photo" src="https://via.placeholder.com/280x280" alt="Фотография растительности" >
+          <img class="photo" src="img/photo-cactus-mobile@1x.jpg" >
+          <div class="text__wrapper">
           <h3 class="photo-title">Местная растительность</h3>
           <small class="photo-text">Автор фото: Сергей</small>
           <p class="photo-number photo-number--like">143</p>
         </div>
+        </div>
         <div class="photo-wrapper">
-          <img class="photo" src="https://via.placeholder.com/280x280" alt="Фотография дороге через лесной массив" >
+          <img class="photo" src="img/photo-roads-mobile@1x.jpg" alt="Фотография дороге через лесной массив" >
+          <div class="text__wrapper">
           <h3 class="photo-title">Дорога на Север</h3>
           <small class="photo-text">Автор фото: Петр</small>
           <p class="photo-number photo-number--like">96</p>
         </div>
+        </div>
         <div class="photo-wrapper">
-          <img class="photo" src="https://via.placeholder.com/280x280" alt="Фотография дороге через лесной массив" >
+          <img class="photo" src="img/photo-bridge-mobile@1x.jpg" alt="Фотография дороге через лесной массив" >
+          <div class="text__wrapper">
           <h3 class="photo-title">Мост дьявола</h3>
           <small class="photo-text">Автор фото: Антон</small>
           <p class="photo-number photo-number--like">254</p>
+        </div>
         </div>
 
         <div class="video">
           <div class="video-wrapper">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами,пока они не подорожали в очередной раз!</p>
-          <img class="video__img" src="https://via.placeholder.com/321x201" alt="Фотография дороге через лесной массив">
+          <img class="video__img" src="img/video-mobile@1x.jpg" alt="Фотография дороге через лесной массив">
 
           <div class="video-slider">
           </div>
-          <div class="video__setting video-slider--replay video-slider--fuulscrean video-slider--subtitles">
+          <div class="video__setting slider-replay slider-fuulscrean slider-subtitles">
           </div>
           </div>
         </div>
       </div>
     </main>
 
-      <footer class="page-footer">
+    <footer class="page-footer">
       <h3 class="footer-title">#visitsedona</h3>
-      <div class="footer__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"> Мы в Твиттере</a>
+      <div class="footer-social">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link link-twitter" href="https://twitter.com/htmlacademy_ru"> Мы в Твиттере</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">мы в Фейсбуке</a>
+        <li class="social-item">
+          <a class="social-link link-facebook" href="https://www.facebook.com/htmlacademy">мы в Фейсбуке</a>
         </li>
-          <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">мы в Ютубе</a>
+          <li class="social-item">
+          <a class="social-link link-youtube" href="https://www.youtube.com/user/htmlacademyru">мы в Ютубе</a>
         </li>
       </ul>
         <div class="page-footer__copyright copyright">
