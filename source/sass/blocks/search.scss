@@ -1,8 +1,32 @@
 .search__title {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
+  line-height: 1.71;
+  margin-bottom: 0px;
 }
 
 .search_wrapper {
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.71;
 }
+
+.search__button{
+  width: 280px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  margin-bottom: 50px;
+  background-color: $blue-color;
+  color: $white-color;
+  font-size: 21px;
+  line-height: 1.24;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+}
+
+.search__description{
+  padding-bottom: 22px;
+}
+

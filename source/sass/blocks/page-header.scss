@@ -5,15 +5,19 @@
 
 .page-header__title {
   font-size: 18px;
-  text-weight: bold;
-  text-align: center;
-  padding-left: 32px;
-  padding-right: 33px;
-  line-height: 1.44;
+  margin-bottom: 35px;
 }
 
 .page-header__text {
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #333333;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.header-title_wrapper{
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  line-height: 1.44;
 }

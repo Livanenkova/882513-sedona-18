@@ -1,31 +1,31 @@
-.bridge__wrapper {
-  background-color: #81b3d2;
-  color: white;
-  text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 24px;
-  line-height: 1.5;
-}
-
-.advantages-bridge__discription {
-  font-size: 14px;
-  line-height: 21px;
-}
-
 .advantages-bridge__list {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   text-align: center;
+  padding-left: 0;
 }
 
 .advantages-bridge__item__title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  padding-top: 10px;
+  padding-top: 5px;
+  margin-bottom: 0px;
 }
 
 .advantages-bridge__item {
   list-style: none;
+}
+
+.bridge-wrapper {
+  padding-top: 24px;
+}
+
+.advantages-bridge__item {
+  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
+}
+
+.text_bridge {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 27px;
 }
