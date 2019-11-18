@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -11,15 +12,15 @@
         <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-link">Главная</a>
+            <a class="site-link item-main" >Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item item-photo">
             <a class="site-link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item item-form">
             <a class="site-link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item item-academy">
             <a class="site-link">Html academy</a>
           </li>
         </ul>
@@ -127,7 +128,11 @@
             Опишите подробно все свои восторги
           </textarea>
         </fieldset>
-
+        <div class="button__wrapper">
+        <button class="button" type="button">
+          Отправить отзыв
+        </button>
+        </div>
       </form>
     </div>
     </main>
