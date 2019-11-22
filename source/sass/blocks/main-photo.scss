@@ -1,17 +1,19 @@
-.main-wrapper {
-  text-align: center;
-}
-
-.text__wrapper {
-  text-align: left;
-  margin-left: 20px;
+.main-photo {
+  padding-top: 20px;
 }
 
 .photo-title {
   font-size: 14px;
-  font-weight: bold;
-  line-height: 1.71;
-  margin-bottom: 1px;
+  text-align: left;
+  padding-left: 1px;
+  margin-bottom: 10px;
+}
+
+.text-wrapper {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 45px;
 }
 
 .photo-text {
@@ -21,9 +23,6 @@
 }
 
 .photo-number {
-  padding-top: 5px;
-}
-
-.photo-wrapper {
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 35px;
 }

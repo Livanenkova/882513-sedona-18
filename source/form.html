@@ -3,45 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-link item-main" >Главная</a>
-          </li>
-          <li class="site-list__item item-photo">
-            <a class="site-link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item item-form">
-            <a class="site-link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item item-academy">
-            <a class="site-link">Html academy</a>
-          </li>
-        </ul>
+    <div class="container">
+    <header class="header">
+    <nav class="nav back_blue">
+      <div class="nav__item title_white">
+        <a class="nav__link" href="index.html" >
+          Главная
+        </a>
       </div>
-      </nav>
-      <button class="main-nav__toggle" type="button">
-          Открыть меню
-      </button>
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта про город Седона">
-      </a>
-      <div class="header-bg">
+      <div class="nav__item title_white">
+        <a class="nav__link" href="photo.html">
+          Фото и видео
+        </a>
       </div>
-      <div class="header-title_wrapper">
-      <h2 class="page-header__title"> Оставьте свой отзыв</h2>
-      <p class="page-header__text">Помогите нашим отелям стать лучше!Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+      <div class="nav__item title_white">
+        <a class="nav__link" href="form.html">
+          Форма отзыва
+        </a>
       </div>
+      <div class="nav__item title_white">
+        <a class="nav__link" href="https://htmlacademy.ru/">
+          Html academy
+        </a>
+      </div>
+      <div class="nav__logo">
+        <img src="https://via.placeholder.com/150x80" alt="Логотип сайта про город Седона">
+      </div>
+      <div>
+        <button class="header-toggle" type="button">
+          открыть меню
+        </button>
+      </div>
+    </nav>
     </header>
 
-    <main class="main-form">
-      <div class="form-wrapper">
+
+    <main class="form">
+      <section class="bg">
+      <h3 class="visually-hidden">Логотип сайта седона.</h3>
+      <div class="bg__wrapper">
+        <div class="bg__img">
+        </div>
+      </div>
+    </section>
+
+      <section class="page-title">
+      <div class="page-title__wrapper">
+        <h2 class="page-title__subtitle">Оставьте свой отзыв</h2>
+        <div class="page-title__text">Помогите нашим отелям стать лучше!Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</div>
+      </div>
+    </section>
+
         <form  class="form" action="https://echo.htmlacademy.ru."
         method="post">
           <fieldset class="form-id">
@@ -128,35 +144,48 @@
             Опишите подробно все свои восторги
           </textarea>
         </fieldset>
-        <div class="button__wrapper">
+
+        <div class="button-wrapper">
         <button class="button" type="button">
           Отправить отзыв
         </button>
         </div>
       </form>
-    </div>
     </main>
 
-    <footer class="page-footer">
-      <h3 class="footer-title">#visitsedona</h3>
-      <div class="footer-social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link link-twitter" href="https://twitter.com/htmlacademy_ru"> Мы в Твиттере</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link link-facebook" href="https://www.facebook.com/htmlacademy">мы в Фейсбуке</a>
-        </li>
-          <li class="social-item">
-          <a class="social-link link-youtube" href="https://www.youtube.com/user/htmlacademyru">мы в Ютубе</a>
-        </li>
-      </ul>
-        <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <footer class="footer">
+      <div class="footer__item">
+        <h3>#visitsedona</h3>
       </div>
-    </div>
+      <div class="footer__item">
+        <div class="footer__item-social">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-social" href="https://twitter.com/htmlacademy_ru">
+                Мы в Твиттере
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-social" href="https://www.facebook.com/htmlacademy">
+                мы в Фейсбуке
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-social" href="https://www.youtube.com/user/htmlacademyru" >
+                мы в Ютубе
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__item">
+        <div class="footer-copyright copyright">
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
     </footer>
+    </div>
+
 
 </body>
 </html>
