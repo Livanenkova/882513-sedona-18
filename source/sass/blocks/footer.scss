@@ -1,12 +1,14 @@
-.footer-title {
-  font-size: 21px;
-  text-transform: uppercase;
+.footer__item-social {
+  margin: 0;
+  margin-bottom: 30px;
+
+  /* Временно для сетки */
+  min-height: 100px;
 }
 
-.footer__copyright {
-  font-size: 14px;
-}
-
-.footer-wrapper {
-  text-align: center;
+.footer-copyright {
+  margin: 0;
+  padding: 0 20px;
+  /* Временно для сетки */
+  min-height: 90px;
 }

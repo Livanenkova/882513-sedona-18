@@ -3,92 +3,106 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-link item-main" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item item-photo">
-            <a class="site-link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item item-form">
-            <a class="site-link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item item-academy">
-            <a class="site-link">Html academy</a>
-          </li>
-        </ul>
+    <nav class="nav back_blue">
+      <div class="nav__item title_white">
+        <a class="nav__link" href="index.html" >
+          Главная
+        </a>
       </div>
-      </nav>
-      <button class="header-toggle" type="button">
-          Открыть меню
-      </button>
-      <a class="header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта про город Седона">
-      </a>
-      <div class="header-bg">
+      <div class="nav__item title_white">
+        <a class="nav__link" href="photo.html">
+          Фото и видео
+        </a>
       </div>
-      <div class="header-photo_wrapper">
-      <h2 class="photo-title"> Фото и видео</h2>
-      <p class="photo-title">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА?ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ</p>
+      <div class="nav__item title_white">
+        <a class="nav__link" href="form.html">
+          Форма отзыва
+        </a>
       </div>
+      <div class="nav__item title_white">
+        <a class="nav__link" href="https://htmlacademy.ru/">
+          Html academy
+        </a>
+      </div>
+      <div class="nav__logo">
+        <img src="https://via.placeholder.com/150x80" alt="Логотип сайта про город Седона">
+      </div>
+      <div>
+        <button class="header-toggle" type="button">
+          открыть меню
+        </button>
+      </div>
+    </nav>
     </header>
 
-
-    <main class="main-photo">
-      <div class="main-wrapper">
-        <div class="photo-wrapper">
+    <main>
+    <section class="bg">
+      <h3 class="visually-hidden">Слоган сайта седона.</h3>
+      <div class="bg__wrapper">
+        <div class="bg__img">
+        </div>
+      </div>
+    </section>
+      <section class="page-photo_title">
+        <div class="page-photo__wrapper">
+          <h2 class="page-photo__subtitle title">Фото и видео</h2>
+          <div class="page-photo__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут<br> вам забыть о политике и экономике</div>
+        </div>
+      </section>
+        <section class="main-photo">
           <div class="photo">
           <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" alt="Фотография дороги" >
           </div>
           <div class="text-wrapper">
           <h3 class="photo-title">Неродные просторы</h3>
           <small class="photo-text">Автор фото: Борис</small>
-          <p class="photo-number photo-number--like">1330</p>
-        </div>
-        </div>
-        <div class="photo-wrapper">
-          <div class="photo">
-          <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" >
+          <div class="photo-number photo-number--like">1330</div>
           </div>
-          <div class="text-wrapper">
-          <h3 class="photo-title">Местная растительность</h3>
-          <small class="photo-text">Автор фото: Сергей</small>
-          <p class="photo-number photo-number--like">143</p>
-        </div>
-        </div>
-        <div class="photo-wrapper">
-          <div class="photo">
-          <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="Фотография дороге через лесной массив" >
+        </section>
+        <section class="gallery">
+        <div class="gallery-wrapper">
+          <div class="gallery__photo">
+          <img class="gallery__photo-img" src="img/photo-cactus-mobile@1x.jpg" alt="Фотография кактуса">
           </div>
-          <div class="text-wrapper">
-          <h3 class="photo-title">Дорога на Север</h3>
-          <small class="photo-text">Автор фото: Петр</small>
-          <p class="photo-number photo-number--like">96</p>
+          <div class="gallery__text-wrapper">
+          <h3 class="gallery__photo-title">Местная растительность</h3>
+          <small class="gallery__photo-text">Автор фото: Сергей</small>
+          <div class="gallery__photo-number photo-number--like">143</div>
         </div>
         </div>
-        <div class="photo-wrapper">
-          <div class="photo">
+        <div class="gallery-wrapper">
+          <div class="gallery__photo">
+          <img class="gallery__photo-img" src="img/photo-roads-mobile@1x.jpg" alt="Фотография дороге через лесной массив" >
+          </div>
+          <div class="gallery__text-wrapper">
+          <h3 class="gallery__photo-title">Дорога на Север</h3>
+          <small class="gallery__photo-text">Автор фото: Петр</small>
+          <div class="gallery__photo-number photo-number--like">96</div>
+        </div>
+        </div>
+        <div class="gallery-wrapper">
+          <div class="gallery__photo">
           <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="Фотография дороге через лесной массив" >
           </div>
-          <div class="text-wrapper">
-          <h3 class="photo-title">Мост дьявола</h3>
-          <small class="photo-text">Автор фото: Антон</small>
-          <p class="photo-number photo-number--like">254</p>
+          <div class="gallery__text-wrapper">
+          <h3 class="gallery__photo-title">Мост дьявола</h3>
+          <small class="gallery__photo-text">Автор фото: Антон</small>
+          <div class="gallery__photo-number photo-number--like">254</div>
         </div>
         </div>
+        </section>
 
         <div class="video">
           <div class="video-wrapper">
           <div class="video-wrapper__text">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами,пока они не подорожали в очередной раз!</p>
+          <div class="video__text">Смотрите видеопрезентацию и скорее за билетами,пока они не подорожали в очередной раз!</div>
           </div>
           <img class="video__img" src="img/video-mobile@1x.jpg" alt="Фотография дороге через лесной массив">
           <div class="video-slider">
@@ -97,31 +111,40 @@
           </div>
           </div>
         </div>
-      </div>
     </main>
 
     <footer class="footer">
-      <div class="footer-wrapper">
-      <h3 class="footer-title">#visitsedona</h3>
-      <div class="footer-social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link link-twitter" href="https://twitter.com/htmlacademy_ru"> Мы в Твиттере</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link link-facebook" href="https://www.facebook.com/htmlacademy">мы в Фейсбуке</a>
-        </li>
-          <li class="social-item">
-          <a class="social-link link-youtube" href="https://www.youtube.com/user/htmlacademyru">мы в Ютубе</a>
-        </li>
-      </ul>
-        <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="footer__item">
+        <h3>#visitsedona</h3>
       </div>
+      <div class="footer__item">
+        <div class="footer__item-social">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-social" href="https://twitter.com/htmlacademy_ru">
+                Мы в Твиттере
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-social" href="https://www.facebook.com/htmlacademy">
+                мы в Фейсбуке
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-social" href="https://www.youtube.com/user/htmlacademyru" >
+                мы в Ютубе
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div class="footer__item">
+        <div class="footer-copyright copyright">
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
     </footer>
+    </div>
 
 </body>
 </html>
