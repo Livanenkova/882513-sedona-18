@@ -4,19 +4,60 @@
   }
 
   .header {
-    // width: 100%;
     margin: 0;
   }
 
   .nav {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin: 0 auto;
   }
 
   .nav__item {
     width: 20%;
+  }
+
+  .nav__item-index {
+    order: 0;
+  }
+
+  .nav__item-photo {
+    order: 1;
+  }
+
+  .nav__logo {
+    order: 2;
+  }
+
+  .nav__item-form {
+    order: 3;
+  }
+
+  .nav__item-html {
+    order: 4;
+  }
+
+  .header__button {
+    order: 5;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .bg__img {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .page-title__wrapper {
+    padding-top: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .title {
+    font-size: 21px;
   }
 
   .town {
@@ -37,13 +78,18 @@
     order: 0;
   }
 
-  .town-wrapper {
+  .bridge-wrapper {
     order: 1;
   }
 
   .nature {
     display: flex;
     width: 100%;
+  }
+
+  .map__wrapper {
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .footer {
@@ -57,9 +103,62 @@
     width: 100%;
   }
 
+  .text-wrapper {
+    text-align: center;
+  }
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-impression {
+    order: 0;
+    width: 40%;
+  }
+
+  .form-id {
+    order: 1;
+    width: 50%;
+  }
+
+  .form-contact {
+    order: 3;
+    width: 100%;
+  }
+
+  .form-sights {
+    order: 4;
+    width: 100%;
+  }
+
+  .form-emotion {
+    order: 5;
+    width: 100%;
+  }
+
+  .form-sights__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-option {
+    width: 50%;
+  }
+
+  .button-wrapper {
+    order: 6;
+    width: 100%;
+  }
+
+  .page-title {
+    width: 100%;
   }
 }
 
@@ -84,6 +183,39 @@
     width: 20%;
   }
 
+  .nav__item-index {
+    order: 0;
+  }
+
+  .nav__item-photo {
+    order: 1;
+  }
+
+  .nav__logo {
+    order: 2;
+  }
+
+  .nav__item-form {
+    order: 3;
+  }
+
+  .nav__item-html {
+    order: 4;
+  }
+
+  .header__button {
+    order: 5;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .bg__img {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
   .town {
     display: flex;
     width: 100%;
@@ -111,6 +243,12 @@
     width: 100%;
   }
 
+  .map__wrapper {
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
+  }
+
   .footer {
     display: flex;
     justify-content: space-around;
@@ -125,5 +263,48 @@
   .gallery {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-impression {
+    order: 0;
+  }
+
+  .form-id {
+    order: 1;
+  }
+
+  .form-contact {
+    order: 3;
+    width: 100%;
+  }
+
+  .form-sights {
+    order: 4;
+    width: 100%;
+    display: flex;
+  }
+
+  .form-emotion {
+    order: 5;
+    width: 100%;
+  }
+
+  .form-sights__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .form-option {
+    width: 25%;
+  }
+
+  .button-wrapper {
+    order: 6;
+    width: 100%;
   }
 }
