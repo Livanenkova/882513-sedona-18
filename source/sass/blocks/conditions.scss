@@ -11,10 +11,26 @@
   font-weight: bold;
   line-height: 1.44;
   padding-bottom: 10px;
+  text-align: left;
 }
 
 .conditions {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
+}
+
+.conditions__text {
+  text-align: center;
+}
+
+.conditions__icon {
+  width: 35px;
+  height: 35px;
+
+  opacity: 1;
+
+  polygon {
+    fill: $blue-color;
+  }
 }
