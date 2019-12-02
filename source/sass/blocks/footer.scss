@@ -1,3 +1,7 @@
+.footer {
+  text-align: center;
+}
+
 .footer__item-social {
   margin: 0;
   margin-bottom: 30px;
@@ -11,4 +15,27 @@
   padding: 0 20px;
   /* Временно для сетки */
   min-height: 90px;
+}
+
+
+.footer__list {
+  display: flex;
+}
+
+.footer__list-item {
+  align-items: baseline;
+  background-color: $blue-color;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+
+.footer__list-social {
+  margin: 0 auto;
+}
+
+.icon-footer {
+  polygon {
+    fill: #ffffff;
+  }
 }
