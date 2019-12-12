@@ -2,10 +2,50 @@
   height: 389px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 365px;
+    left: 1px;
+
+    width: 100%;
+    height: 26px;
+
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .bg_svg {
   padding-top: 90px;
   width: 280px;
   height: 220px;
+}
+
+.bg__img-form {
+  height: 157px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: bottom;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 132px;
+    left: 1px;
+
+    width: 100%;
+    height: 26px;
+
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.bg__logo-form {
+  width: 230px;
+  padding-top: 30px;
 }

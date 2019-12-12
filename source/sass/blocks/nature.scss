@@ -1,18 +1,20 @@
 .nature {
   line-height: 1.5;
-  padding-top: 24px;
   background-image: url("../../img/bg-nature.png");
   background-repeat: repeat;
 }
 
-.nature__text {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 27px;
+.nature__shadow {
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
 }
 
 .nature__title {
-  padding-top: 5px;
-  margin-bottom: 1px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.nature__text {
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+  padding-top: 11px;
 }

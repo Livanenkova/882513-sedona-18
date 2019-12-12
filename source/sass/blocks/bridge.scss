@@ -2,16 +2,22 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
-  padding-bottom: 10px;
+  padding-top: 1px;
+  margin-top: 15px;
+  padding-bottom: 5px;
 }
 
 .bridge-text {
-  margin-top: 35px;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  padding-left: 28px;
+  padding-right: 25px;
 }
 
 .bridge-wrapper {
   padding-top: 25px;
-  padding-bottom: 45px;
+}
+
+.bridge {
+  line-height: 1.5;
 }
