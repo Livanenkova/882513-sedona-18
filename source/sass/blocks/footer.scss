@@ -2,9 +2,9 @@
   display: flex;
 }
 
-.footer__item {
-  width: 33, 3333%;
-}
+// .footer__item {
+//   width: 33, 3333%;
+// }
 
 .footer__item:nth-child(2) {
   display: flex;
@@ -35,7 +35,6 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  padding-top: 8px;
 }
 
 .footer__item:nth-child(3) {

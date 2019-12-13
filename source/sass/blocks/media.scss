@@ -47,7 +47,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 1px;
+      top: 0px;
       left: 1px;
 
       width: 100%;
@@ -68,10 +68,43 @@
   width: 35px;
   height: 35px;
   }
+
+
+  .town__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  padding-bottom: 4px;
+  }
+
+  .search__title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.71;
+  margin-bottom: 1px;
+}
+.button {
+  width: 280px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  margin-bottom: 50px;
+  background-color: $blue-color;
+  color: $white-color;
+  font-size: 21px;
+  line-height: 1.24;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+}
+
+.footer__item:nth-child(2) {
+  padding-top: 8px;
+}
 }
 
 
 @media only screen and (min-width: $tablet-width) {
+
   .container {
     min-width: 768px;
   }
@@ -165,6 +198,10 @@
     width: 100%;
   }
 
+  .town__title {
+    font-size: 21px;
+  }
+
   .town__img {
   flex-grow: 1;
 
@@ -238,10 +275,6 @@
     height: 68px;
   }
 
-  // .title_food {
-  //   padding-left: 40px;
-  // }
-
   .bridge {
     display: flex;
     width: 100%;
@@ -260,6 +293,25 @@
     width: 100%;
   }
 
+  .nature__item {
+    width: 33.3%;
+  }
+
+  .nature__title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    color: #000000;
+  }
+
+  .search__title {
+    font-size: 30px;
+  }
+
+  .search_button {
+    width: 458px;
+  }
+
   .map__wrapper {
     background-image: url("../../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -270,6 +322,14 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
+  }
+
+  .footer__item {
+    margin-top: 35px;
+  }
+
+  .footer__title {
+    margin-top: 0px;
   }
 
   .main-photo {
@@ -338,10 +398,6 @@
     display: none;
   }
 
-  .footer__item {
-    width: 33.3333%;
-  }
-
   .page-title__wrapper {
     padding-top: 33px;
     font-size: 21px;
@@ -349,12 +405,16 @@
     line-height: 1.86;
   }
 
-  .page-title__subtitle{
+  .page-title__subtitle {
     font-size: 21px;
     font-weight: bold;
   }
-}
 
+  .search_wrapper {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 @media only screen and (min-width: $desktop-width) {
