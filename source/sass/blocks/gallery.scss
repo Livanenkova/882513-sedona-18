@@ -1,15 +1,293 @@
 .gallery-wrapper {
-  padding-bottom: 45px;
+  width: 100%;
 }
 
 .gallery__text-wrapper {
   text-align: left;
-  margin-left: 20px;
 }
 
 .gallery__photo-title {
   font-size: 14px;
   margin-bottom: 10px;
   text-align: left;
-  padding-left: 1px;
+}
+
+.photo--sunset {
+  background-image: url("../../img/photo-sunset-desktop@1x.jpg");
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.photo--cactus {
+  background-image: url("../../img/photo-cactus-desktop@1x.jpg");
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.photo--roads {
+  background-image: url("../../img/photo-roads-desktop@1x.jpg");
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.photo--bridge {
+  background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.gallery__photo-text {
+  text-transform: none;
+}
+
+.photo-number--volume {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: $mobile-width-only) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gallery-wrapper {
+    width: 100%;
+    // padding-left: 20px;
+    // padding-right: 20px;
+  }
+
+  .gallery__photo-wrapper {
+    box-shadow: 1px 1px 0 0 rgba(1, 1, 1, 0.2);
+    margin-top: 21px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .photo--sunset,
+  .photo--cactus,
+  .photo--roads,
+  .photo--bridge {
+    width: 280px;
+    height: 280px;
+    // background-position: top center;
+    // background-size: cover;
+  }
+
+  .gallery__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .gallery__photo-title {
+    padding-top: 7px;
+  }
+
+  .gallery__photo-number {
+    padding-top: 5px;
+  }
+
+  .photo-number--volume {
+    padding-left: 10px;
+  }
+
+  .svg__like path,
+  rect,
+  circle,
+  polygon {
+    width: 22px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.3;
+    background-color: #000000;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 35px;
+  }
+
+  .gallery__photo-wrapper:first-child {
+    width: 100%;
+    padding-bottom: 21px;
+  }
+
+  .gallery__photo-title {
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+
+  .gallery__photo-number:first-child {
+    margin-top: 20px;
+  }
+
+  .photo-number--volume:first-child {
+    padding-left: 6px;
+  }
+
+  .gallery__photo-number {
+    margin-top: 22px;
+  }
+
+  .photo-number--volume:nth-child(2) {
+    padding-left: 8px;
+    padding-right: 15px;
+  }
+
+  .gallery__photo-wrapper {
+    width: 50%;
+    box-shadow: none;
+    padding-bottom: 22px;
+    background-image: url("../../img/bg-nature.png");
+    background-repeat: repeat;
+  }
+
+  .gallery__text-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .photo--sunset {
+    height: 400px;
+    width: 648px;
+  }
+
+  .gallery__photo-img {
+    width: 100%;
+  }
+
+  .photo--cactus,
+  .photo--roads,
+  .photo--bridge {
+    width: 324px;
+    height: 267px;
+    background-position: center;
+  }
+
+  .svg__like {
+    width: 22px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.3;
+  }
+
+  .svg__like path,
+  rect,
+  circle,
+  polygon {
+    fill: black;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .gallery-wrapper {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 40px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__photo-wrapper:first-child {
+    width: 100%;
+    padding-bottom: 1px;
+  }
+
+  .photo--sunset {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .gallery__photo-wrapper {
+    width: 33.3333%;
+    position: relative;
+    padding-bottom: 1px;
+  }
+
+  .gallery__text-wrapper--other {
+    position: absolute;
+    top: 187px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.3;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+  .gallery__text-wrapper--boris {
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 320px;
+    width: 1200px;
+    background-color: black;
+    opacity: 0.3;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+  .gallery__photo-title {
+    color: white;
+  }
+
+  .photo--cactus,
+  .photo--roads,
+  .photo--bridge {
+    width: 100%;
+    height: 267px;
+  }
+
+  .svg__like {
+    width: 22px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 1;
+  }
+
+  .svg__like path,
+  rect,
+  circle,
+  polygon {
+    fill: white;
+  }
 }

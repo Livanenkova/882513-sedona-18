@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,152 +12,163 @@
     <div class="container">
     <header class="header ">
     <nav class="nav nav--opened nav--nojs">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="nav__item nav__item-index title_white  nav__item--active">
+      <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="nav__item nav__item--active">
         <a class="nav__link" href="index.html">
           Главная
         </a>
       </div>
-      <div class="nav__item nav__item-photo title_white">
+      <div class="nav__item nav__item-photo">
         <a class="nav__link" href="photo.html">
           Фото и видео
         </a>
       </div>
-      <div class="nav__item nav__item-form title_white">
+      <div class="nav__item nav__item-form ">
         <a class="nav__link" href="form.html">
           Форма отзыва
         </a>
       </div>
-      <div class="nav__item nav__item-html title_white">
+      <div class="nav__item nav__item-html">
         <a class="nav__link" href="https://htmlacademy.ru/">
           Html academy
         </a>
       </div>
-      <div class="nav__logo">
-        <img src="img/logo-sedona-mobile.svg" alt="Логотип сайта про город Седона">
+      <div class="nav__item nav__logo">
+        <img class="logo__sedona" src="img/logo-sedona-mobile.svg" alt="Логотип сайта про город Седона">
       </div>
     </nav>
     </header>
-    <section class="bg">
+
+    <main>
+    <section class="bg-form">
       <h3 class="visually-hidden">Слоган сайта седона.</h3>
-      <div class="bg__wrapper">
-        <div class="bg__img">
+      <div class="bg__wrapper-form">
+        <div class="bg__img-form">
+          <img class="bg_svg-form" src="img/text-sedona.svg" alt="Логотип сайта седона.">
         </div>
       </div>
     </section>
 
-    <main class="form">
-      <section class="page-title">
-      <div class="page-title__wrapper">
-        <h2 class="page-title__subtitle">Оставьте свой отзыв</h2>
-        <div class="page-title__text">Помогите нашим отелям стать лучше!Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</div>
+    <main class="main">
+      <section class="page-photo_title">
+      <div class="page-form__wrapper">
+        <h2 class="page-photo__subtitle title">Оставьте свой отзыв</h2>
+        <div class="page-form__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</div>
       </div>
     </section>
 
         <form  class="form" action="https://echo.htmlacademy.ru."
         method="post">
-          <fieldset class="form-id">
-          <legend class="form-title">Представьтесь</legend>
-          <p class="form-item">
-            <label class="item-name" for="form-name">
+          <fieldset class="form-id--wrapper">
+          <div class="form-id">
+          <div class="name-title--wrapper">
+            <legend class="name-title title">
+              Представьтесь:
+            </legend>
+          </div>
+          <p class="form-item form-item--name">
+            <label class="item-name " for="form-name">
             Имя<sup>*</sup>:
           </label>
-            <input class="name-field" type="text" name="name" value placeholder="Петр" id="form-name">
+            <input class="name-field bg-form-grey title" type="text" name="name" value placeholder="Петр" id="form-name">
         </p>
-        <p class="form-item">
-            <label class="item-surname" for="form-surname">Фамилия<sup>*</sup>:
+        <p class="form-item form-item--surname">
+            <label class="item-surname" for="form-surname ">Фамилия<sup>*</sup>:
             </label>
-            <input class="surname-field" type="text" name="surname" value placeholder="Иванов" id="form-surname">
+            <input class="surname-field bg-form-grey title" type="text" name="surname" value placeholder="Иванов" id="form-surname">
         </p>
-        <p class="form-item">
-          <label class="item-patronym" for="form-patronym">Отчество<sup>*</sup>:
+        <p class="form-item form-item--patronym">
+          <label class="item-patronym" for="form-patronym">Отчество:
           </label>
-          <input class="patronym-field" type="text" name="patronym" value placeholder="Александрович" id="form-patronym">
+          <input class="patronym-field bg-form-grey title" type="text" name="patronym" value placeholder="Александрович" id="form-patronym">
         </p>
+        </div>
       </fieldset>
 
       <fieldset class="form-contact">
-        <legend class="form-title">Контактная информация:</legend>
-        <p class="form-item">
-          <label class="item-phone" for="form-phone">Контактный телефон<sup>*</sup>:
+        <legend class="form-title--contact">Контактная информация:</legend>
+        <div class="form-contact--wrapper">
+        <div class="form-item--contact">
+          <label class="item-phone" for="form-phone"><div class="item-phone--none">Контактный</div> телефон<sup>*</sup>:
           </label>
-          <input class="phone-field" type="text" name="phone" value placeholder="Введите телефона" id="form-phone">
-        </p>
-        <p class="form-item">
+          <input class="phone-field bg-form-grey" type="text" name="phone" value placeholder="Введите телефон " id="form-phone">
+        </div>
+        <div class="form-item--contact">
           <label class="item-email" for="form-email">Электронная почта<sup>*</sup>:
           </label>
-          <input class="email-field" type="text" name="email" value placeholder="Введите телефон" id="form-email">
-        </p>
+          <input class="email-field bg-form-grey" type="text" name="email" value placeholder="Введите e-mail" id="form-email">
+        </div>
+      </div>
       </fieldset>
 
         <fieldset class="form-impression">
-          <legend class="form-title">Ваше общее впечатление</legend>
-          <ul>
-            <li class="form-option">
+          <legend class="form-title--impression">Ваше общее впечатление:</legend>
+          <div class="form-impression__list">
+            <div class="form-option">
               <input class="item-effect" type="radio" id="positively" name="form-effect" checked>
               <label class="effect-field" for="positively">Скорее положительное</label>
-            </li>
-            <li class="form-option">
+            </div>
+            <div class="form-option">
               <input class="item-effect" type="radio" name="form-effect" id="negative">
-            <label  class="effect-field" for="negative" >Скоре отрицательное</label>
-          </li>
-            <li class="form-option">
+            <label  class="effect-field" for="negative">Скореe отрицательное</label>
+          </div>
+            <div class="form-option">
             <input class="item-effect" type="radio" name="form-effect" id="difficult">
             <label class="effect-field" for="difficult">Затрудняюсь ответить</label>
-          </li>
-          </ul>
+          </div>
+          </div>
         </fieldset>
 
         <fieldset class="form-sights">
-          <legend class="form-title">
+          <legend class="form-title--sights">
           Посещенные достопримечательности
           </legend>
-          <ul class="form-sights__list">
-            <li class="form-option">
-              <input class="item-devil" type="checkbox" name="form-sights"
+          <div class="form-sights__list">
+            <div class="form-option--sights">
+              <input class=" item-sights item-devil" type="checkbox" name="form-sights"
               id="devil" checked>
             <label class="devil-checkbox" for="devil">Мост Дьявола</label>
-            </li>
-            <li class="form-option">
-              <input class="item-mountain" type="checkbox" name="form-sights"
+            </div>
+            <div class="form-option--sights">
+              <input class="item-sights item-mountain" type="checkbox" name="form-sights"
               id="mountain" checked>
               <label  class="mountain-checkbox" for="mountain">Гора-Колокол</label>
-            </li>
-            <li class="form-option">
-              <input class="item-park" type="checkbox" name="form-sights" id="park" checked>
+            </div>
+            <div class="form-option--sights">
+              <input class=" item-sights item-park" type="checkbox" name="form-sights" id="park" checked>
             <label class="park-checkbox" for="park">Слайд-парк</label>
-            </li>
-            <li class="form-option">
-              <input class="item-red-mountain" type="checkbox" name="form-sights" id="red-mountain">
-              <label class="red-mountain-checkbox" for="red-mountain">Красные скалы</label>
-            </li>
-          </ul>
+            </div>
+            <div class="form-option--sights">
+              <input class="item-sights item-red-mountain" type="checkbox" name="form-sights" id="red-mountain">
+              <label class="red-mountain-checkbox" for="red-mountain"><div>Красные скалы</div></label>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="form-emotion">
-          <legend class="form-title">Опишите свои эмоции:</legend>
-          <textarea class="emotion-filds" name="form-text" cols="30" rows="10" >
-            Опишите подробно все свои восторги
-          </textarea>
+          <legend class="form-title--emotion">Опишите свои эмоции:</legend>
+          <textarea class="emotion-filds bg-form-grey title" name="form-text" cols="22
+          " rows="7" wrap="virtual" >Опишите подробно все свои восторги</textarea>
         </fieldset>
 
         <div class="button-wrapper">
-        <button class="button" type="button">
+        <button class="revocation_button button" type="button">
           Отправить отзыв
         </button>
+        <div class="footnote">
+          <div class="footnote-wrapper">* — обязательные поля</div>
         </div>
+        </div>
+
       </form>
     </main>
 
     <footer class="footer">
       <div class="footer__item">
-        <h3>#visitsedona</h3>
+        <h3 class="footer__title">#visitsedona</h3>
       </div>
       <div class="footer__item">
-        <div class="footer__item-social">
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a class="footer__list-social" href="https://twitter.com/htmlacademy_ru">
+              <a class="footer__list-link" href="https://twitter.com/htmlacademy_ru">
                 <svg class="icon-footer" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
                 <g>
@@ -165,28 +177,21 @@
                 </g>
                 </svg>
               </a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-social" href="https://www.facebook.com/htmlacademy">
+              <a class="footer__list-link" href="https://www.facebook.com/htmlacademy">
                 <svg  class="icon-footer" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
                 <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
                 </svg>
               </a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-social" href="https://www.youtube.com/user/htmlacademyru" >
+              <a class="footer__list-link" href="https://www.youtube.com/user/htmlacademyru" >
                 <svg class="icon-footer"  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
                 <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
                 </svg>
               </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </div>
       <div class="footer__item">
         <div class="footer-copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <svg class="copyright__link-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
           </a>
@@ -194,6 +199,23 @@
       </div>
     </footer>
     </div>
+
+    <script>
+  var navMain = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+
+  navMain.classList.remove('nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('nav--closed')) {
+      navMain.classList.remove('nav--closed');
+      navMain.classList.add('nav--opened');
+    } else {
+      navMain.classList.add('nav--closed');
+      navMain.classList.remove('nav--opened');
+    }
+  });
+</script>
 
 
 </body>
