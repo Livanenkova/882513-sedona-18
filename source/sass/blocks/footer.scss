@@ -2,14 +2,16 @@
   display: flex;
 }
 
-// .footer__item {
-//   width: 33, 3333%;
-// }
+.footer__title {
+  color: $black-color;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+}
 
 .footer__item:nth-child(2) {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
 }
 
 .icon-footer path {
@@ -18,11 +20,21 @@
 
 .footer__list-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: $blue-color;
   width: 48px;
   height: 47px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__link-img {
+  margin-left: 13px;
 }
 
 .footer__list-link:nth-child(2) {
@@ -30,16 +42,74 @@
   margin-left: 5px;
 }
 
-.footer__title {
-  color: $black-color;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.24;
+@media (max-width: $mobile-width-only) {
+  .footer__item {
+    padding-top: 18px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footer__title {
+    margin-top: 30px;
+  }
+
+  .footer__item:nth-child(3) {
+    padding-top: 40px;
+    padding-left: 1px;
+    font-size: 14px;
+    color: $black-color;
+  }
+
+  .footer__item:nth-child(2) {
+    padding-top: 18px;
+  }
 }
 
-.footer__item:nth-child(3) {
-  padding-top: 27px;
-  padding-left: 1px;
-  font-size: 14px;
-  color: $black-color;
+@media only screen and (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .footer__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+  }
+
+  // .footer__title {
+
+  // }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 110px;
+  }
+
+  .footer__item {
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+  }
+
+  .footer-copyright {
+    padding-left: 31px;
+  }
+
+  .footer__title {
+    padding-right: 24px;
+  }
 }

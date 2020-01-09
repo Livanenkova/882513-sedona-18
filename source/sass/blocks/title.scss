@@ -38,10 +38,65 @@
 
 .page-title__subtitle {
   font-size: 18px;
-  // font-weight: bold;
   line-height: 1.44;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   text-align: center;
+}
+
+
+// @media (max-width: $mobile-width-only) {
+
+// }
+
+@media only screen and (min-width: $tablet-width) {
+  .title {
+    font-size: 21px;
+  }
+
+  .page-title__wrapper-index {
+    padding-bottom: 44px;
+  }
+
+  .page-title {
+    width: 100%;
+  }
+
+  .page-title__wrapper {
+    padding-top: 33px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.86;
+  }
+
+  .page-title__subtitle {
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-title__subtitle {
+    font-size: 21px;
+    font-weight: bold;
+    color: $black-color;
+  }
+
+  .page-title__text {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black-color-two;
+  }
 }

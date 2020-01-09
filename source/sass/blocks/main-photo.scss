@@ -26,3 +26,20 @@
   padding-top: 15px;
   padding-bottom: 35px;
 }
+
+
+// @media (max-width: $mobile-width-only) {
+
+// }
+
+@media only screen and (min-width: $tablet-width) {
+  .main-photo {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .main-photo {
+    width: 100%;
+  }
+}

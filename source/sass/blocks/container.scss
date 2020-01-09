@@ -3,3 +3,15 @@
   margin: 0 auto;
   text-align: center;
 }
+
+@media only screen and (min-width: $tablet-width) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .container {
+    min-width: 1200px;
+  }
+}

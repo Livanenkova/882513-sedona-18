@@ -39,7 +39,8 @@
 
 .conditions__icon path,
 rect,
-circle {
+circle,
+polygon {
   fill: $blue-color;
 }
 
@@ -49,4 +50,79 @@ circle {
 
 .icon__food {
   margin-top: 10px;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .conditions__icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .conditions {
+    padding-top: 20px;
+    display: flex;
+  }
+
+  .conditions__item {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .conditions__subtitle {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    color: #000000;
+    width: 100%;
+  }
+
+  .conditions__title {
+    width: 100%;
+  }
+
+  // .item__house {
+  //   order: 0;
+  // }
+
+  // .item__food  {
+  //   order: 1;
+  // }
+
+  // .item__gift {
+  //   order: 2;
+  // }
+
+  .conditions__icon {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .icon__house {
+    width: 75px;
+    height: 72px;
+  }
+
+  .icon__gift {
+    width: 64px;
+    height: 75px;
+  }
+
+  .icon__food {
+    width: 77px;
+    height: 68px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .conditions {
+    display: flex;
+  }
 }

@@ -25,3 +25,17 @@ input,
 textarea {
   border: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+fieldset {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
