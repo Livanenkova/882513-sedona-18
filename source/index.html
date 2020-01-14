@@ -34,7 +34,12 @@
         </a>
       </div>
       <div class="nav__item nav__logo">
-        <img class="logo__sedona" src="img/logo-sedona-mobile.svg" alt="Логотип сайта про город Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__sedona" src="img/logo-sedona-mobile.svg" alt="Логотип сайта про город Седона" >
+          </picture>
+
       </div>
     </nav>
     </header>
@@ -44,7 +49,9 @@
       <h3 class="visually-hidden">Слоган сайта седона.</h3>
       <div class="bg__wrapper">
         <div class="bg__img">
-        <img class="bg_svg" src="img/text-sedona-index.svg" alt="Слоган сайта седона.">
+          <picture>
+            <img class="bg_svg" src="img/text-sedona-index.svg" alt="Слоган сайта седона.">
+          </picture>
       </div>
     </div>
     </section>
@@ -66,7 +73,7 @@
             <div class="some-text town__text ">Седона не аттракцион для туристов, там течет своя жизнь</div>
           </div>
         </div>
-        <div class="some-img">img</div>
+        <div class="town-img"></div>
       </section>
 
       <section class="icons">
@@ -106,7 +113,7 @@
               </div>
               <div class="icons-title">Сувениры</div>
             </div>
-            <div class="icons-text">Не только китайского,<br> но и местного производства!</div>
+            <div class="icons-text">Не только китайского, но и местного производства!</div>
           </div>
         </div>
         <div class="icons-item item__burger">
@@ -126,13 +133,13 @@
               </div>
               <div class="icons-title">Еда</div>
             </div>
-            <div class="icons-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
+            <div class="icons-text icons-text--food">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
           </div>
         </div>
       </section>
 
         <section class="some">
-        <div class="bridge-img">img</div>
+        <div class="bridge-img"></div>
         <div class="bridge-info">
           <div class="some-inner">
             <h2 class="bridge__title">Там есть мост дьявола</h2>
@@ -163,7 +170,7 @@
     <section class="search">
       <div class="search_wrapper">
         <h3 class="search__title">Заинтересовались?</h3>
-        <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие приглашения гостиниц в седоне</p>
+        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие приглашения гостиниц в седоне</p>
         <button class="search_button button" type="button">
           Найти гостиницу
         </button>
@@ -172,11 +179,11 @@
     <section class="map">
       <h3 class="visually-hidden">Карта Седоны.</h3>
       <div class="map__wrapper">
-        <picture>
+<!--         <picture>
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
             <img src="img/bg-map-mobile@1x.jpg" alt="Седона" >
-          </picture>
+          </picture> -->
       </div>
     </section>
     </main>
