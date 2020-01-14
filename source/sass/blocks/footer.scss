@@ -44,7 +44,7 @@
 
 @media (max-width: $mobile-width-only) {
   .footer__item {
-    padding-top: 18px;
+    padding-top: 8px;
   }
 
   .footer {
@@ -84,10 +84,6 @@
     justify-content: center;
     margin-top: 22px;
   }
-
-  // .footer__title {
-
-  // }
 }
 
 @media only screen and (min-width: $desktop-width) {

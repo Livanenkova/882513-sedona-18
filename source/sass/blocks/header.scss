@@ -274,7 +274,7 @@
     top: 1px;
     z-index: 1;
     left: 25px;
-    background-image: url("../../img/logo-sedona-tablet.svg");
+    // background-image: url("../../img/logo-sedona-tablet.svg");
   }
 
   .nav-toggle {
@@ -337,11 +337,10 @@
     color: $black-color;
   }
 
-  .logo__sedona {
-    position: absolute;
-    top: 1px;
-    z-index: 1;
-    left: 67px;
-    background-image: url("../../img/logo-sedona-tablet.svg");
-  }
+  // .logo__sedona {
+  //   position: absolute;
+  //   top: 1px;
+  //   z-index: 1;
+  //   left: 67px;
+  // }
 }

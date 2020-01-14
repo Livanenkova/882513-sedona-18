@@ -32,12 +32,12 @@
   line-height: 1.44;
 }
 
-.some-img {
+.town-img {
   flex-grow: 1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../img/main-city-desktop@1x.jpg");
+  height: 256px;
 }
 
 .icons {
@@ -98,10 +98,6 @@ polygon {
     width: 100%;
   }
 
-  .some-img {
-    height: 260px;
-  }
-
   .icons {
     padding-top: 20px;
     padding-bottom: 35px;
@@ -111,7 +107,7 @@ polygon {
     width: 100%;
     justify-content: flex-start;
     min-height: 120px;
-    padding: 5px 1px 1px 20px;
+    padding: 1px 1px 1px 20px;
   }
 
   .icons-header {
@@ -166,6 +162,21 @@ polygon {
     }
   }
 
+  .town-img {
+    height: 260px;
+    width: 100%;
+    background-image: url("../../img/main-city-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/main-city-mobile@2x.jpg");
+    }
+  }
+
+  .icons {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
   .icons-ico {
     width: 40px;
     margin: 0;
@@ -173,7 +184,19 @@ polygon {
 
   .icons-item {
     text-align: center;
-    padding-top: 10px;
+  }
+
+  .icons-text--food {
+    padding-right: 30px;
+  }
+
+  .town__title {
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .town__text:nth-child(odd) {
+    margin-top: 10px;
   }
 }
 
@@ -191,12 +214,23 @@ polygon {
     margin-top: 20px;
   }
 
+
+  .town-img {
+    height: 256px;
+    // width: 100%;
+    background-image: url("../../img/main-city-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/main-city-tablet@2x.jpg");
+    }
+  }
+
   .some-info {
     min-height: 256px;
     padding: 15px 25px 25px 25px;
   }
 
-  .some-text {
+  .town-text {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 14px;
@@ -287,8 +321,6 @@ polygon {
     margin-top: 1px;
     margin-bottom: 1px;
     padding-top: 1px;
-    // padding-left: 65px;
-    // padding-right: 65px;
   }
 
   .some-text {

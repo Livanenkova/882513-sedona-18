@@ -20,9 +20,22 @@
 }
 
 
-// @media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
+  .nature__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    color: #000000;
+  }
 
-// }
+  .nature__text {
+    padding-bottom: 30px;
+    // margin-bottom: 5px;
+    padding-top: 11px;
+    width: 80%;
+    margin: 5px auto 1px;
+  }
+}
 
 @media only screen and (min-width: $tablet-width) {
   .nature {
