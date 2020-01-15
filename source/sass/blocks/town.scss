@@ -63,13 +63,6 @@
   margin: 0 auto;
 }
 
-.svg path,
-rect,
-circle,
-polygon {
-  fill: $blue-color;
-}
-
 .icons-title {
   font-size: 18px;
   font-weight: bold;
@@ -90,6 +83,13 @@ polygon {
   letter-spacing: normal;
   text-align: center;
   color: $black-color-two;
+}
+
+.svg path,
+rect,
+circle,
+polygon {
+  fill: $blue-color;
 }
 
 
@@ -210,8 +210,29 @@ polygon {
     margin-bottom: 15px;
   }
 
+  .town-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .town-text {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
   .town__text:nth-child(odd) {
     margin-top: 20px;
+    width: 80%;
   }
 
 
@@ -228,18 +249,6 @@ polygon {
   .some-info {
     min-height: 256px;
     padding: 15px 25px 25px 25px;
-  }
-
-  .town-text {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
   }
 
   .icons-item {
@@ -323,6 +332,11 @@ polygon {
     padding-top: 1px;
   }
 
+  .town__text:nth-child(odd) {
+    margin-top: 15px;
+    width: 90%;
+  }
+
   .some-text {
     width: 100%;
     margin: 0;
@@ -330,7 +344,6 @@ polygon {
   }
 
   .some-info {
-    // min-height: 300px;
     padding: 15px 45px 25px 45px;
   }
 
@@ -349,9 +362,12 @@ polygon {
   }
 
   .icons-item {
-    min-height: 300px;
-    margin-bottom: 25px;
+    min-height: 330px;
     width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .icons-title {
@@ -391,7 +407,6 @@ polygon {
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 75%;
   }
 }

@@ -42,10 +42,13 @@
   .bg__img-form {
     height: 157px;
     background-image: url("../../img/bg-back-mobile@1x.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     background-position: bottom;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-mobile@2x.jpg");
+    }
 
     &::after {
       content: "";
@@ -90,7 +93,7 @@
   }
 
   .bg_svg {
-    padding-top: 75px;
+    padding-top: 79px;
   }
 
   .bg_svg-form {
