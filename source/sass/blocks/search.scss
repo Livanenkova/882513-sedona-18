@@ -59,6 +59,13 @@
     width: 100%;
     text-align: center;
   }
+
+  .search__description {
+    padding-top: 15px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    width: 55%;
+  }
 }
 
 @media only screen and (min-width: $desktop-width) {

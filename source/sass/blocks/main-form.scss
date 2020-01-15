@@ -109,6 +109,10 @@
   background-size: auto;
   background-position: center;
   background-color: #f2f2f2;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/tick-svg@2x.png");
+  }
 }
 
 .form-id {

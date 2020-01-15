@@ -22,27 +22,6 @@
   background-size: cover;
 }
 
-// .photo--cactus {
-//   height: 280px;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-//   background-size: cover;
-// }
-
-// .photo--roads {
-//   height: 280px;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-//   background-size: cover;
-// }
-
-// .photo--bridge {
-//   height: 280px;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-//   background-size: cover;
-// }
-
 .gallery__photo-text {
   text-transform: none;
 }
@@ -60,10 +39,6 @@
     flex-direction: column;
   }
 
-  // .gallery-wrapper {
-  //   width: 100%;
-  // }
-
   .gallery__photo-wrapper {
     box-shadow: 1px 1px 0 0 rgba(1, 1, 1, 0.2);
     margin-top: 21px;
@@ -77,7 +52,6 @@
   .photo--roads,
   .photo--bridge {
     width: 280px;
-    // height: 280px;
   }
 
   .photo--sunset {
@@ -260,7 +234,7 @@
   rect,
   circle,
   polygon {
-    fill: black;
+    fill: $black-color;
   }
 }
 
@@ -321,6 +295,14 @@
     padding-bottom: 1px;
   }
 
+  .gallery__photo-number:first-child {
+    margin-top: 1px;
+  }
+
+  .gallery__photo-number {
+    margin-top: 1px;
+  }
+
   .gallery__text-wrapper--other {
     position: absolute;
     top: 187px;
@@ -353,6 +335,8 @@
 
   .gallery__photo-title {
     color: white;
+    margin-top: 1px;
+    margin-bottom: 7px;
   }
 
   .photo--cactus,
