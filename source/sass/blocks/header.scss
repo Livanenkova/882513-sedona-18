@@ -19,13 +19,13 @@
 
 .title {
   font-size: 18px;
-  color: black;
+  color: $black-color;
   font-weight: bold;
 }
 
 .text {
   font-size: 14px;
-  color: black;
+  color: $black-color;
 }
 
 .text-black2 {
@@ -34,7 +34,7 @@
 
 .nav {
   position: relative;
-  color: black;
+  color: $black-color-two;
   min-height: 51px;
   margin: 0 auto;
 }
@@ -45,6 +45,9 @@
   font-style: normal;
   line-height: 2.22;
   margin: 0 auto;
+}
+
+.nav__item :not(:last-child){
 
   &:hover {
     background-color: #669ec0;
@@ -53,18 +56,25 @@
 
   &:active {
     background-color: #5496bd;
-    color: #88b6d1;
+    color: rgba(255, 255, 255, 0.2);
     border-top-color: #6a4d38;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }
 
 .nav__logo {
   background-color: white;
-  // height: 40px;
 }
 
 .nav__logo img {
   max-width: 100%;
+}
+
+.nav__link {
+  display: block;
 }
 
 
@@ -187,7 +197,7 @@
     background-color: $blue-color;
   }
 
-  .logo__sedona {
+  .nav__item-logo {
     position: absolute;
     top: 1px;
     z-index: 1;
@@ -269,7 +279,7 @@
     color: $black-color;
   }
 
-  .logo__sedona {
+  .nav__item-logo {
     position: absolute;
     top: 1px;
     z-index: 1;
@@ -336,11 +346,4 @@
     text-align: center;
     color: $black-color;
   }
-
-  // .logo__sedona {
-  //   position: absolute;
-  //   top: 1px;
-  //   z-index: 1;
-  //   left: 67px;
-  // }
 }
