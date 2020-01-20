@@ -47,8 +47,7 @@
   margin: 0 auto;
 }
 
-.nav__item :not(:last-child){
-
+.nav__item :not(:last-child) {
   &:hover {
     background-color: #669ec0;
     border-top-color: #755a46;

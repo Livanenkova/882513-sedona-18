@@ -136,7 +136,6 @@
 
 
 @media (max-width: $mobile-width-only) {
-
   .form-contact--wrapper {
     padding-bottom: 20px;
   }
@@ -162,9 +161,9 @@
   }
 
   .item-sights + label {
-  padding-left: 77px;
-  padding-bottom: 35px;
-  padding-top: 19px;
+    padding-left: 77px;
+    padding-bottom: 35px;
+    padding-top: 19px;
   }
 
   .item-effect + label {
@@ -330,7 +329,7 @@
 
   .item-phone,
   .item-email {
-  padding-top: 18px;
+    padding-top: 18px;
   }
 }
 
@@ -705,9 +704,15 @@
   .form-title--sights {
     position: relative;
     width: 50%;
+    padding-top: 10px;
     // padding-top: 20px;
   }
 
+
+  // .form-title--sights {
+  //   width: 30%;
+
+  // }
   .form-title--sights::before {
     content: "";
     z-index: 2;
@@ -860,11 +865,6 @@
     width: 86%;
   }
 
-  .form-title--sights {
-    width: 30%;
-    padding-top: 10px;
-  }
-
   .item-effect + label {
     margin: 0 auto;
     position: relative;
@@ -956,15 +956,11 @@
     text-align: left;
     width: auto;
     margin-right: 20px;
+    position: relative;
   }
 
   .item-phone--none {
     display: none;
-  }
-
-  .item-phone,
-  .item-email {
-    position: relative;
   }
 
   .item-phone::after {
@@ -1003,7 +999,7 @@
 
   .name-title {
     padding-top: 20px;
-    text-align: left ;
+    text-align: left;
   }
 
   .form-option {
