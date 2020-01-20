@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+
     <div class="container">
     <header class="header ">
     <nav class="nav nav--opened nav--nojs">
@@ -34,12 +36,13 @@
         </a>
       </div>
       <div class="nav__item nav__logo">
+        <a href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="logo__sedona" src="img/logo-sedona-mobile.svg" alt="Логотип сайта про город Седона" >
+            <img class="nav__item-logo" src="img/logo-sedona-mobile.svg" alt="Логотип сайта про город Седона" >
           </picture>
-
+        </a>
       </div>
     </nav>
     </header>
@@ -64,14 +67,12 @@
         <form  class="form" action="https://echo.htmlacademy.ru."
         method="post">
           <fieldset class="form-id--wrapper">
-          <div class="form-id">
-          <div class="name-title--wrapper">
             <legend class="name-title title">
               Представьтесь:
             </legend>
-          </div>
+          <div class="form-id">
           <p class="form-item form-item--name">
-            <label class="item-name " for="form-name">
+            <label class="item-name" for="form-name">
             Имя<sup>*</sup>:
           </label>
             <input class="name-field bg-form-grey title" type="text" name="name" value placeholder="Петр" id="form-name">
@@ -90,17 +91,17 @@
       </fieldset>
 
       <fieldset class="form-contact">
-        <legend class="form-title--contact">Контактная информация:</legend>
+        <legend class="form-title--contact"><span class="form-contact__line">Контактная информация:</span></legend>
         <div class="form-contact--wrapper">
         <div class="form-item--contact">
           <label class="item-phone" for="form-phone"><span class="item-phone--none">Контактный</span> телефон<sup>*</sup>:
           </label>
-          <input class="phone-field bg-form-grey" type="text" name="phone" value placeholder="Введите телефон " id="form-phone">
+          <input class="phone-field bg-form-grey" type="tel" name="phone" value placeholder="Введите телефон " id="form-phone">
         </div>
         <div class="form-item--contact">
           <label class="item-email" for="form-email">Электронная почта<sup>*</sup>:
           </label>
-          <input class="email-field bg-form-grey" type="text" name="email" value placeholder="Введите e-mail" id="form-email">
+          <input class="email-field bg-form-grey" type="email" name="email" value placeholder="Введите e-mail" id="form-email">
         </div>
       </div>
       </fieldset>
@@ -124,9 +125,7 @@
         </fieldset>
 
         <fieldset class="form-sights">
-          <legend class="form-title--sights">
-          Посещенные достопримечательности
-          </legend>
+          <legend class="form-title--sights">Посещенные достопримечательности</legend>
           <div class="form-sights__list">
             <div class="form-option--sights">
               <input class=" item-sights item-devil" type="checkbox" name="form-sights"
@@ -151,13 +150,11 @@
 
         <fieldset class="form-emotion">
           <legend class="form-title--emotion">Опишите свои эмоции:</legend>
-          <textarea class="emotion-filds bg-form-grey title" name="form-text" cols="22" rows="7">
-            Опишите подробно все свои восторги
-          </textarea>
+          <textarea class="emotion-filds bg-form-grey title" name="form-text" cols="22" rows="7">Опишите подробно все свои  восторги</textarea>
         </fieldset>
 
         <div class="button-wrapper">
-        <button class="revocation_button button" type="button">
+        <button class="revocation_button button" type="submit" >
           Отправить отзыв
         </button>
         <div class="footnote">
@@ -169,10 +166,10 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__item">
+      <div class="footer__item footer__item--form">
         <h3 class="footer__title">#visitsedona</h3>
       </div>
-      <div class="footer__item">
+      <div class="footer__item footer__item--form">
               <a class="footer__list-link" href="https://twitter.com/htmlacademy_ru">
                 <svg class="icon-footer" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
@@ -193,7 +190,7 @@
                 </svg>
               </a>
             </div>
-      <div class="footer__item">
+      <div class="footer__item footer__item--form">
         <div class="footer-copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
             <svg class="copyright__link-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
