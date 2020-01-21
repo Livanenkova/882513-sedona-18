@@ -703,16 +703,12 @@
 
   .form-title--sights {
     position: relative;
-    width: 50%;
+    width: 30%;
     padding-top: 10px;
     // padding-top: 20px;
   }
 
 
-  // .form-title--sights {
-  //   width: 30%;
-
-  // }
   .form-title--sights::before {
     content: "";
     z-index: 2;
