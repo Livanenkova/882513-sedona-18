@@ -15,6 +15,21 @@
   font-weight: bold;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  color: rgba(#ffffff, 0.3%);
+
+  background-color: #5496bd;
+}
+
+.button:disabled {
+  background-color: #ebebeb;
+}
+
 .search__description {
   padding-bottom: 22px;
 }
@@ -84,6 +99,10 @@
 
   .search__description {
     padding-bottom: 40px;
-    width: 33%;
+    width: 45%;
+  }
+
+  .search__description--width {
+    display: block;
   }
 }

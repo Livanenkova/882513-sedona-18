@@ -85,13 +85,20 @@
   color: $black-color-two;
 }
 
-.svg path,
-rect,
-circle,
-polygon {
+.svg path {
+  fill: $blue-color;
+}
+.svg rect {
   fill: $blue-color;
 }
 
+.svg circle {
+  fill: $blue-color;
+}
+
+.svg polygon {
+  fill: $blue-color;
+}
 
 @media only screen and (max-width: 767px) {
   .some-info {
@@ -333,14 +340,14 @@ polygon {
   }
 
   .town__text:nth-child(odd) {
-    margin-top: 15px;
+    margin-top: 25px;
     width: 90%;
   }
 
   .some-text {
     width: 100%;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 9px;
   }
 
   .some-info {
@@ -362,7 +369,7 @@ polygon {
   }
 
   .icons-item {
-    min-height: 307px;
+    min-height: 310px;
     width: 33.33%;
     margin-bottom: 20px;
     display: flex;
@@ -409,5 +416,9 @@ polygon {
     letter-spacing: normal;
     text-align: center;
     width: 75%;
+  }
+
+  .icons-text--gift {
+    display: block;
   }
 }

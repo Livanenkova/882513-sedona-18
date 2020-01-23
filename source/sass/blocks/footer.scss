@@ -16,6 +16,9 @@
 
 .icon-footer path {
   fill: $white-color;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__list-link {
@@ -25,6 +28,14 @@
   background-color: $blue-color;
   width: 48px;
   height: 47px;
+}
+
+.footer__list-link:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+.footer__list-link:active {
+  background-color: #669ec0;
 }
 
 .copyright__link {
@@ -39,6 +50,13 @@
 
 .copyright__link-img path {
   fill: $black-color;
+    &:hover {
+    fill: #81b3d2;
+  }
+    &:active {
+      fill: $black-color;
+    opacity: 0.3;
+  }
 }
 
 .footer__list-link:nth-child(2) {
@@ -116,6 +134,7 @@
     display: flex;
     align-items: center;
     width: 33.3%;
+    margin-top: 37px;
   }
 
   .footer-copyright {

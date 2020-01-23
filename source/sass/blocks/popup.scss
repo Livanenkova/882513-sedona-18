@@ -1,7 +1,10 @@
-
+  .form-popup {
+    display: none;
+  }
 
 @media (max-width: $mobile-width-only) {
   .form-popup {
+    display: none;
     height: 280px;
     width: 320px;
     background-color: $white-color;
@@ -9,6 +12,7 @@
   }
 
   .form-popup--wrapper {
+    display: none;
     text-align: center;
     display: flex;
     flex-direction: column;

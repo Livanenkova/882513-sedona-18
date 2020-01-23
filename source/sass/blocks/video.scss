@@ -219,7 +219,14 @@
   .svg__subtitles,
   .svg__fullscreen,
   .svg__replay,
-  path,
+  path{
+    fill: $white-color;
+    opacity: 1;
+  }
+
+  .svg__subtitles,
+  .svg__fullscreen,
+  .svg__replay,
   polygon {
     fill: $white-color;
     opacity: 1;
