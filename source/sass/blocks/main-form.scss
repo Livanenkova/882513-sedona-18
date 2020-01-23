@@ -105,13 +105,13 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: url("../../img/icon-tick.svg") no-repeat scroll 0 0;
+  background: url("../img/icon-tick.svg") no-repeat scroll 0 0;
   background-size: auto;
   background-position: center;
   background-color: #f2f2f2;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/tick-svg@2x.png");
+    background-image: url("../img/tick-svg@2x.png");
   }
 }
 
@@ -589,7 +589,7 @@
     position: absolute;
     left: 30px;
     top: 0;
-    background: url("../../img/icon-tick.svg") no-repeat scroll 0 0;
+    background: url("../img/icon-tick.svg") no-repeat scroll 0 0;
     background-size: auto;
     background-position: center;
     background-color: #f2f2f2;
@@ -925,7 +925,7 @@
     position: absolute;
     left: 50px;
     top: 0;
-    background: url("../../img/icon-tick.svg") no-repeat scroll 0 0;
+    background: url("../img/icon-tick.svg") no-repeat scroll 0 0;
     background-size: auto;
     background-position: center;
     background-color: #f2f2f2;
@@ -1003,11 +1003,6 @@
     width: 316px;
   }
 
-  // .form-item {
-  //   margin-top: 14px;
-  //   margin-bottom: 10px;
-  // }
-
   .form-item--contact {
     flex-wrap: nowrap;
     padding: 30px 40px 30px 35px;
@@ -1049,7 +1044,7 @@
     height: 58px;
     top: -10px;
     left: 345px;
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #e5e5e5;
@@ -1063,7 +1058,7 @@
     height: 58px;
     top: -10px;
     left: 425px;
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #e5e5e5;

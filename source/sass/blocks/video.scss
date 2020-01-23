@@ -51,10 +51,10 @@
   .video__img {
     margin-top: 18px;
     position: relative;
-    background-image: url("../../img/video-mobile@1x.jpg");
+    background-image: url("../img/video-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-mobile@2x.jpg");
+      background-image: url("../img/video-mobile@2x.jpg");
     }
   }
 
@@ -71,7 +71,7 @@
 
   .video__setting {
     position: absolute;
-    background-image: url("../../img/bg-nature.png");
+    background-image: url("../img/bg-nature.png");
     top: 200px;
     height: 66px;
     width: 280px;
@@ -159,10 +159,10 @@
     text-align: center;
     margin-left: 60px;
     margin-right: 60px;
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
 
@@ -269,10 +269,10 @@
     text-align: center;
     margin-left: 199px;
     margin-right: 201px;
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
 
