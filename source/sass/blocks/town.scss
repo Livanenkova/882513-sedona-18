@@ -245,10 +245,10 @@
 
   .town-img {
     height: 256px;
-    background-image: url("../../img/main-city-tablet@1x.jpg");
+    background-image: url("../img/main-city-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/main-city-tablet@2x.jpg");
+      background-image: url("../img/main-city-tablet@2x.jpg");
     }
   }
 
