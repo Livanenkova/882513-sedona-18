@@ -1,11 +1,11 @@
-.town__title {
+.town-title {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   color: white;
 }
 
-.town__text {
+.town-text {
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -88,6 +88,7 @@
 .svg path {
   fill: $blue-color;
 }
+
 .svg rect {
   fill: $blue-color;
 }
@@ -197,18 +198,18 @@
     padding-right: 30px;
   }
 
-  .town__title {
+  .town-title {
     padding-top: 15px;
     margin-bottom: 15px;
   }
 
-  .town__text:nth-child(odd) {
+  .town-text:nth-child(odd) {
     margin-top: 10px;
   }
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .town__title {
+  .town-title {
     font-size: 21px;
     font-weight: bold;
     line-height: 1.24;
@@ -237,15 +238,13 @@
     text-align: center;
   }
 
-  .town__text:nth-child(odd) {
+  .town-text:nth-child(odd) {
     margin-top: 20px;
-    width: 80%;
   }
 
 
   .town-img {
     height: 256px;
-    // width: 100%;
     background-image: url("../../img/main-city-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
@@ -291,7 +290,7 @@
     height: 75px;
   }
 
-  .item__house {
+  .item-house {
     order: 0;
   }
 
@@ -299,7 +298,7 @@
     order: 1;
   }
 
-  .item__gift {
+  .item-gift {
     order: 2;
   }
 
@@ -329,7 +328,7 @@
     justify-content: center;
   }
 
-  .town__title {
+  .town-title {
     width: 60%;
     font-size: 21px;
     font-weight: bold;
@@ -339,7 +338,7 @@
     padding-top: 1px;
   }
 
-  .town__text:nth-child(odd) {
+  .town-text:nth-child(odd) {
     margin-top: 25px;
     width: 90%;
   }
@@ -354,7 +353,7 @@
     padding: 15px 45px 25px 45px;
   }
 
-  .item__house {
+  .item-house {
     order: 0;
     width: 75px;
     height: 72px;
@@ -364,14 +363,14 @@
     order: 1;
   }
 
-  .item__gift {
+  .item-gift {
     order: 2;
   }
 
   .icons-item {
-    min-height: 310px;
+    min-height: 330px;
     width: 33.33%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,7 +417,7 @@
     width: 75%;
   }
 
-  .icons-text--gift {
+  .icons-text__gift {
     display: block;
   }
 }

@@ -1,3 +1,8 @@
+.form {
+  background-color: $white-color;
+  padding-top: 15px;
+}
+
 .button-wrapper {
   padding-top: 20px;
 }
@@ -46,6 +51,17 @@
   text-align: left;
   color: #000000;
   padding-left: 22px;
+  background-color: $bg-form-grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+  }
 }
 
 .item-surname {
@@ -69,10 +85,6 @@
   padding-bottom: 20px;
 }
 
-.form {
-  padding-top: 15px;
-}
-
 .item-sights,
 .item-effect {
   display: none;
@@ -91,7 +103,7 @@
 .item-sights + label::before {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
   display: block;
   content: "";
   padding: 5px;
@@ -104,7 +116,7 @@
 .item-sights:checked + label::before {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
   background: url("../img/icon-tick.svg") no-repeat scroll 0 0;
   background-size: auto;
   background-position: center;
@@ -134,38 +146,37 @@
   padding-top: 4px;
 }
 
-.name-field,
-.surname-field,
-.patronym-field,
-.phone-field,
-.email-field {
-  background-color:$bg-form-grey;
-  cursor: pointer;
-  &:hover {
-    background-color: #e5e5e5
-  }
-
-  &:active,
-  &:focus {
-    background-color: #ffffff;
-  }
+.item-effect:hover + label::before,
+.item-effect:focus + label::before {
+  background-color: #e5e5e5;
 }
 
-  .item-effect:hover + label::before,
-  .item-effect:focus + label::before {
-    background-color: #e5e5e5;
-  }
+.item-effect:active + label::before {
+  background-color: #d5d5d5;
+}
 
-  .item-effect:active + label::before {
-    background-color: #d5d5d5;
-  }
+.item-sights:hover + label::before,
+.item-sights:focus + label::before {
+  background-color: #e5e5e5;
+}
 
+.item-sights:active + label::before {
+  background-color: #d5d5d5;
+}
 
-
-
+.item-sights:checked:active + label::before {
+  position: absolute;
+  left: 35px;
+  top: 0;
+  background: url("../../img/tick-copy-7.svg") no-repeat scroll 0 0;
+  background-size: auto;
+  background-position: center;
+  background-color: #f2f2f2;
+  text-align: center;
+}
 
 @media (max-width: $mobile-width-only) {
-  .form-contact--wrapper {
+  .form-contact__wrapper {
     padding-bottom: 20px;
   }
 
@@ -192,14 +203,14 @@
   .item-sights + label {
     padding-left: 77px;
     padding-bottom: 35px;
-    padding-top: 19px;
+    padding-top: 20px;
   }
 
   .item-effect + label {
     margin: 0 auto;
     position: relative;
     display: inline-block;
-    padding-left: 90px;
+    padding-left: 97px;
     padding-bottom: 15px;
     cursor: pointer;
     text-align: center;
@@ -247,19 +258,20 @@
     background-color: #d5d5d5;
   }
 
-    .item-effect:focus + label::after {
+  .item-effect:focus + label::after {
     background-color: #d5d5d5;
   }
 
   .form-item {
     width: 88%;
-    padding-top: 20px;
+    padding-top: 17px;
     margin-top: 1px;
     margin-bottom: 1px;
   }
 
   .name-title {
     width: 100%;
+    padding-top: 6px;
   }
 
   .name-field {
@@ -267,14 +279,14 @@
   }
 
   .surname-field {
-    width: 178px;
+    width: 190px;
   }
 
   .patronym-field {
     width: 194px;
   }
 
-  .form-id--wrapper {
+  .id-wrapper {
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
     padding-bottom: 22px;
   }
@@ -288,8 +300,8 @@
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
   }
 
-  .form-title--impression {
-    padding-top: 19px;
+  .form-impression__title {
+    padding-top: 27px;
   }
 
   .form-sights {
@@ -302,9 +314,10 @@
     width: 280px;
     height: 58px;
     margin-top: 13px;
+    position: relative;
   }
 
-  .form-item--contact {
+  .form-contact__item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -313,10 +326,10 @@
     margin-right: 20px;
   }
 
-  .form-title--sights,
-  .form-title--contact,
-  .form-title--emotion,
-  .form-title--impression {
+  .form-sights__title,
+  .form-contact__title,
+  .form-emotion__title,
+  .form-impression__title {
     font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
@@ -326,16 +339,16 @@
     text-align: center;
   }
 
-  .form-title--contact {
-    padding-top: 18px;
+  .form-contact__title {
+    padding-top: 20px;
   }
 
-  .form-title--emotion {
+  .form-emotion__title {
     margin-bottom: 10px;
     padding-top: 15px;
   }
 
-  .form-title--sights {
+  .form-sights__title {
     padding-top: 15px;
     padding-bottom: 10px;
   }
@@ -350,7 +363,7 @@
   }
 
   .revocation_button {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 24px;
     width: 280px;
     height: 58px;
@@ -364,9 +377,53 @@
     align-items: center;
   }
 
-  .item-phone,
+  .item-phone {
+    padding-top: 25px;
+    position: relative;
+  }
+
   .item-email {
     padding-top: 18px;
+    position: relative;
+  }
+
+  .item-phone::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 54px;
+    right: -96px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+  }
+
+  .item-email::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 48px;
+    right: -111px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+  }
+
+  .item-sights:checked:active + label::before {
+    position: absolute;
+    left: 35px;
+    top: 0;
+    background: url("../../img/tick-copy-7.svg") no-repeat scroll 0 0;
+    background-size: auto;
+    background-position: center;
+    background-color: #f2f2f2;
+    text-align: center;
   }
 }
 
@@ -377,10 +434,10 @@
     justify-content: space-between;
   }
 
-  .form-title--sights,
-  .form-title--contact,
-  .form-title--emotion,
-  .form-title--impression {
+  .form-sights__title,
+  .form-contact__title,
+  .form-emotion__title,
+  .form-impression__title {
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
@@ -389,13 +446,13 @@
     letter-spacing: normal;
   }
 
-  .form-title--sights {
+  .form-sights__title {
     position: relative;
     width: 50%;
-    padding-top: 20px;
+    padding-top: 15px;
   }
 
-  .form-title--sights::before {
+  .form-sights__title::before {
     content: "";
     z-index: 2;
     position: absolute;
@@ -406,24 +463,24 @@
     background-color: $bg-darkgrey;
   }
 
-  .form-title--sights::after {
+  .form-sights__title::after {
     content: "";
     z-index: 2;
     position: absolute;
     width: 120px;
     height: 1px;
-    top: 45px;
+    top: 40px;
     left: 390px;
     background-color: $black-color-two;
   }
 
-  .form-title--contact {
+  .form-contact__title {
     padding-top: 40px;
     padding-bottom: 6px;
     position: relative;
   }
 
-  .form-title--contact::after {
+  .form-contact__title::after {
     content: "";
     z-index: 2;
     position: absolute;
@@ -434,7 +491,7 @@
     background-color: $black-color-two;
   }
 
-  .form-title--contact::before {
+  .form-contact__title::before {
     content: "";
     z-index: 2;
     position: absolute;
@@ -445,13 +502,13 @@
     background-color: $bg-darkgrey;
   }
 
-  .form-title--emotion {
+  .form-emotion__title {
     padding-bottom: 52px;
     position: relative;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
-  .form-title--emotion::after {
+  .form-emotion__title::after {
     content: "";
     z-index: 2;
     position: absolute;
@@ -462,7 +519,7 @@
     background-color: $black-color-two;
   }
 
-  .form-title--emotion::before {
+  .form-emotion__title::before {
     content: "";
     z-index: 2;
     position: absolute;
@@ -479,7 +536,7 @@
     border-right: 0.5px grey solid;
   }
 
-  .form-id--wrapper {
+  .id-wrapper {
     order: 1;
     flex-grow: 1;
     text-align: left;
@@ -490,11 +547,25 @@
     order: 3;
     width: 100%;
     padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form-contact,
+  .form-emotion,
+  .form-sights {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .form-sights {
     order: 4;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .form-emotion {
@@ -526,11 +597,8 @@
   .revocation_button {
     width: 324px;
     height: 58px;
-    padding-left: 40px;
-    padding-right: 60px;
-    padding-bottom: 20px;
-    padding-top: 15px;
-    margin-top: 30px;
+    padding-right: 21px;
+    margin-top: 40px;
     text-align: center;
   }
 
@@ -576,18 +644,38 @@
   .item-sights + label {
     display: block;
     padding-top: 15px;
-    padding-left: 80px;
     padding-bottom: 45px;
   }
 
+  .item-devil + label {
+    padding-left: 75px;
+    padding-top: 15px;
+  }
+
+  .item-park + label {
+    padding-left: 60px;
+    padding-top: 20px;
+  }
+
+  .item-mountain + label {
+    padding-left: 59px;
+    padding-top: 15px;
+  }
+
+  .item-red-mountain + label {
+    padding-left: 60px;
+    padding-top: 20px;
+  }
+
   .item-sights + label::before {
-    left: 30px;
+    left: 35px;
     top: 0;
   }
 
+
   .item-sights:checked + label::before {
     position: absolute;
-    left: 30px;
+    left: 35px;
     top: 0;
     background: url("../img/icon-tick.svg") no-repeat scroll 0 0;
     background-size: auto;
@@ -595,6 +683,18 @@
     background-color: #f2f2f2;
     text-align: center;
   }
+
+  .item-sights:checked:active + label::before {
+    position: absolute;
+    left: 35px;
+    top: 0;
+    background: url("../../img/tick-copy-7.svg") no-repeat scroll 0 0;
+    background-size: auto;
+    background-position: center;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
 
   .item-effect + label {
     margin: 0 auto;
@@ -645,7 +745,7 @@
     background-color: #d5d5d5;
   }
 
-    .item-effect:focus + label::after {
+  .item-effect:focus + label::after {
     background-color: #d5d5d5;
   }
 
@@ -661,13 +761,14 @@
     color: $black-color;
   }
 
-  .form-title--impression {
+  .form-impression__title {
     padding-top: 40px;
   }
 
   .name-title {
     text-align: left;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
+    padding-top: 40px;
   }
 
   .name-field {
@@ -686,22 +787,23 @@
     width: 178px;
   }
 
-  .form-item--contact {
+  .form-contact__item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 13px;
+    padding-top: 15px;
   }
 
   .item-phone,
   .item-email {
     width: 100%;
     text-align: left;
-    padding-left: 55px;
-    padding-bottom: 12px;
+    padding-left: 60px;
+    padding-bottom: 16px;
+    position: relative;
   }
 
   .item-email {
@@ -715,9 +817,38 @@
   .phone-field,
   .email-field {
     width: 648px;
+    position: relative;
   }
 
-  .form-option--sights {
+  .item-phone::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 41px;
+    right: 38px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+  }
+
+  .item-email::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 41px;
+    right: 38px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+  }
+
+  .form-sights__option {
     width: 50%;
   }
 
@@ -728,7 +859,7 @@
   }
 
   .footnote {
-    margin-top: 35px;
+    margin-top: 45px;
   }
 }
 
@@ -746,15 +877,14 @@
     align-items: center;
   }
 
-  .form-title--sights {
+  .form-sights__title {
     position: relative;
     width: 30%;
     padding-top: 18px;
-    // padding-top: 20px;
   }
 
 
-  .form-title--sights::before {
+  .form-sights__title::before {
     content: "";
     z-index: 2;
     position: absolute;
@@ -765,7 +895,7 @@
     background-color: $bg-darkgrey;
   }
 
-  .form-title--sights::after {
+  .form-sights__title::after {
     content: "";
     z-index: 2;
     position: absolute;
@@ -776,14 +906,14 @@
     background-color: $black-color-two;
   }
 
-  .form-title--contact {
+  .form-contact__title {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 6px;
     position: relative;
   }
 
-  .form-title--contact::after {
+  .form-contact__title::after {
     content: "";
     z-index: 2;
     position: absolute;
@@ -794,7 +924,7 @@
     background-color: $black-color-two;
   }
 
-  .form-title--contact::before {
+  .form-contact__title::before {
     content: "";
     z-index: 2;
     position: absolute;
@@ -805,13 +935,13 @@
     background-color: $bg-darkgrey;
   }
 
-  .form-title--emotion {
+  .form-emotion__title {
     padding-bottom: 52px;
     position: relative;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
-  .form-title--emotion::after {
+  .form-emotion__title::after {
     content: "";
     z-index: 2;
     position: absolute;
@@ -822,7 +952,7 @@
     background-color: $black-color-two;
   }
 
-  .form-title--emotion::before {
+  .form-emotion__title::before {
     content: "";
     z-index: 2;
     position: absolute;
@@ -847,17 +977,21 @@
     order: 4;
     width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   .form-emotion {
     order: 5;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .emotion-filds {
     width: 960px;
     height: 160px;
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   .name-field {
@@ -879,7 +1013,7 @@
     justify-content: space-between;
     padding-left: 120px;
     padding-right: 120px;
-    margin-bottom: 55px;
+    margin-bottom: 66px;
   }
 
   .revocation_button {
@@ -888,6 +1022,11 @@
     padding-top: 18px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 45px;
+  }
+
+  .footnote {
+    margin-top: 50px;
   }
 
   .form-sights__list {
@@ -896,8 +1035,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin-right: 105px;
+    margin-left: 85px;
     text-transform: capitalize;
     font-size: 18px;
     font-weight: bold;
@@ -911,19 +1050,19 @@
 
   .item-sights + label {
     display: block;
-    padding-top: 10px;
-    padding-left: 105px;
+    padding-top: 15px;
+    padding-left: 85px;
     padding-bottom: 45px;
   }
 
   .item-sights + label::before {
-    left: 30px;
+    left: 40px;
     top: 0;
   }
 
   .item-sights:checked + label::before {
     position: absolute;
-    left: 50px;
+    left: 40px;
     top: 0;
     background: url("../img/icon-tick.svg") no-repeat scroll 0 0;
     background-size: auto;
@@ -978,15 +1117,15 @@
     border-radius: 50%;
   }
 
-    .item-effect:hover + label::after {
+  .item-effect:hover + label::after {
     background-color: #d5d5d5;
   }
 
-    .item-effect:focus + label::after {
+  .item-effect:focus + label::after {
     background-color: #d5d5d5;
   }
 
-  .item-phone--none,
+  .item-phone__none,
   .item-email--none {
     display: none;
   }
@@ -1003,14 +1142,14 @@
     width: 316px;
   }
 
-  .form-item--contact {
+  .form-contact__item {
     flex-wrap: nowrap;
     padding: 30px 40px 30px 35px;
     margin-right: 1px;
     margin-left: 1px;
   }
 
-  .form-contact--wrapper {
+  .form-contact__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1032,7 +1171,7 @@
     position: relative;
   }
 
-  .item-phone--none {
+  .item-phone__none {
     display: none;
   }
 
@@ -1064,7 +1203,7 @@
     background-color: #e5e5e5;
   }
 
-  .form-title--impression {
+  .form-impression__title {
     padding-top: 25px;
     padding-left: 70px;
     text-align: center;
@@ -1079,11 +1218,11 @@
     width: 80%;
   }
 
-  .form-id--wrapper {
+  .id-wrapper {
     margin-left: 75px;
   }
 
-  .form-option--sights {
+  .form-sights__option {
     width: 25%;
   }
 

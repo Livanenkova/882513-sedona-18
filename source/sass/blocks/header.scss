@@ -207,6 +207,18 @@
     box-shadow: 1px 1px 0 0 rgba(1, 1, 1, 0.2);
     padding-top: 8px;
     padding-bottom: 8px;
+    display: block;
+    color: $white-color;
+
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3%);
+      background-color: #5496bd;
+    }
   }
 
   .nav__link {
@@ -217,21 +229,6 @@
     letter-spacing: normal;
     text-align: center;
     color: $white-color;
-  }
-
-  .nav__item{
-  display: block;
-  color: $white-color;
-  &:hover,
-  &:focus {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    color: rgba(#ffffff, 0.3%);
-
-    background-color: #5496bd;
-  }
   }
 
   .nav__logo {
@@ -254,8 +251,8 @@
   .nav__item {
     width: 20%;
     box-shadow: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .nav__item-index {
@@ -290,11 +287,13 @@
     line-height: 1.86;
     letter-spacing: normal;
     text-align: center;
-  }
-
-  .nav__link {
     color: $black-color;
-    &:hover,
+
+    &:hover {
+      color: $blue-color;
+      background-color: $white-color;
+    }
+
     &:focus {
       color: $blue-color;
       background-color: $white-color;
@@ -305,6 +304,7 @@
       background-color: $white-color;
     }
   }
+
 
   .nav__item--active {
     color: #766357;

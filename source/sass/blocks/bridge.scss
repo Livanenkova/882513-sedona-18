@@ -16,7 +16,7 @@
   padding-bottom: 40px;
 }
 
-.bridge__title {
+.bridge-title {
   color: $white-color;
 }
 
@@ -54,7 +54,7 @@
     color: $white-color;
   }
 
-  .bridge__title {
+  .bridge-title {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.44;
@@ -77,14 +77,13 @@
     padding: 15px 25px 25px 25px;
   }
 
-  .bridge__title {
+  .bridge-title {
     font-size: 21px;
     font-weight: bold;
     line-height: 1.24;
     margin-top: 1px;
-    padding-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 27px;
+    margin-bottom: 10px;
+    padding-left: 28px;
     padding-right: 28px;
   }
 
@@ -107,7 +106,7 @@
   }
 
   .bridge-text:nth-child(odd) {
-    padding-top: 15px;
+    padding-top: 25px;
   }
 }
 
@@ -117,7 +116,7 @@
     width: 100%;
   }
 
-  .bridge__title {
+  .bridge-title {
     width: 66%;
     font-size: 21px;
     font-weight: bold;

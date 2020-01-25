@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  background-color: $white-color;
 }
 
 .footer__title {
@@ -16,6 +17,7 @@
 
 .icon-footer path {
   fill: $white-color;
+
   &:active {
     opacity: 0.3;
   }
@@ -34,6 +36,7 @@
 .button:focus {
   background-color: #669ec0;
 }
+
 .footer__list-link:active {
   background-color: #669ec0;
 }
@@ -50,11 +53,13 @@
 
 .copyright__link-img path {
   fill: $black-color;
-    &:hover {
+
+  &:hover {
     fill: #81b3d2;
   }
-    &:active {
-      fill: $black-color;
+
+  &:active {
+    fill: $black-color;
     opacity: 0.3;
   }
 }
@@ -66,7 +71,7 @@
 
 @media (max-width: $mobile-width-only) {
   .footer__item {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .footer__item--form {
@@ -134,7 +139,7 @@
     display: flex;
     align-items: center;
     width: 33.3%;
-    margin-top: 37px;
+    margin-top: 20px;
   }
 
   .footer-copyright {

@@ -27,6 +27,10 @@
   position: relative;
 }
 
+.video {
+  background-color: $white-color;
+}
+
 @media (max-width: $mobile-width-only) {
   .video-wrapper {
     margin-bottom: 90px;
@@ -80,6 +84,13 @@
     margin-right: 20px;
   }
 
+  .replay__button,
+  .fullscreen__button,
+  .subtitles__button {
+    border: none;
+    background-color: inherit;
+  }
+
   .video-scale {
     position: absolute;
     top: 177px;
@@ -90,7 +101,7 @@
     left: 43px;
   }
 
-  .video-scale--slider {
+  .video__img-slider {
     position: absolute;
     top: 173px;
     left: 78px;
@@ -100,22 +111,61 @@
     background-color: white;
   }
 
-  .icon__replay {
+  .replay {
     position: absolute;
     top: 223px;
     left: 47px;
   }
 
-  .icon__subtitles {
+  .subtitles {
     position: absolute;
     top: 223px;
     right: 94px;
   }
 
-  .icon__fullscreen {
+  .fullscreen {
     position: absolute;
     top: 223px;
     right: 45px;
+  }
+
+  .replay__svg path {
+    fill: #5c6870;
+
+    &:hover {
+      fill: #333333;
+    }
+
+    &:active {
+      fill: #333333;
+      opacity: 0.3;
+    }
+  }
+
+  .fullscreen__svg polygon {
+    fill: #5c6870;
+
+    &:hover {
+      fill: #333333;
+    }
+
+    &:active {
+      fill: #333333;
+      opacity: 0.3;
+    }
+  }
+
+  .subtitles__svg path {
+    fill: #5c6870;
+
+    &:hover {
+      fill: #333333;
+    }
+
+    &:active {
+      fill: #333333;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -188,7 +238,7 @@
     left: 153px;
   }
 
-  .video-scale--slider {
+  .video__img-slider {
     position: absolute;
     top: 445px;
     left: 266px;
@@ -198,38 +248,83 @@
     background-color: white;
   }
 
-  .icon__replay {
+  .replay {
     position: absolute;
     top: 439px;
     left: 95px;
   }
 
-  .icon__subtitles {
+  .replay__button,
+  .fullscreen__button,
+  .subtitles__button {
+    border: none;
+    background-color: inherit;
+  }
+
+  .subtitles {
     position: absolute;
     top: 442px;
     right: 151px;
   }
 
-  .icon__fullscreen {
+  .fullscreen {
     position: absolute;
     top: 442px;
     right: 100px;
   }
 
-  .svg__subtitles,
-  .svg__fullscreen,
-  .svg__replay,
-  path{
+  .subtitles__svg,
+  .fullscreen__svg,
+  .replay__svg,
+  path,
+  polygon {
     fill: $white-color;
     opacity: 1;
   }
 
-  .svg__subtitles,
-  .svg__fullscreen,
-  .svg__replay,
-  polygon {
+  .replay__svg path {
     fill: $white-color;
     opacity: 1;
+
+    &:hover {
+      fill: $white-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white-color;
+      opacity: 0.3;
+    }
+  }
+
+  .fullscreen__svg polygon {
+    fill: $white-color;
+    opacity: 1;
+
+    &:hover {
+      fill: $white-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white-color;
+      opacity: 0.3;
+    }
+  }
+
+  .subtitles__svg path {
+    fill: $white-color;
+    opacity: 1;
+
+    &:hover {
+      fill: $white-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white-color;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -298,7 +393,7 @@
     left: 290px;
   }
 
-  .video-scale--slider {
+  .video__img-slider {
     position: absolute;
     top: 448px;
     left: 402px;
@@ -308,19 +403,19 @@
     background-color: white;
   }
 
-  .icon__replay {
+  .replay {
     position: absolute;
     top: 440px;
     left: 230px;
   }
 
-  .icon__subtitles {
+  .subtitles {
     position: absolute;
     top: 440px;
     right: 295px;
   }
 
-  .icon__fullscreen {
+  .fullscreen {
     position: absolute;
     top: 440px;
     right: 242px;

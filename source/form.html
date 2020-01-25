@@ -57,26 +57,28 @@
         <h3 class="visually-hidden">
           Слоган сайта седона.
         </h3>
-        <div class="bg__wrapper-form">
-          <div class="bg__img-form">
+        <div class="bg-form__wrapper">
+          <div class="bg-form__img">
             <img class="bg_svg-form" src="img/text-sedona.svg" alt="Логотип сайта седона.">
           </div>
         </div>
       </section>
-      <section class="page-photo_title">
-        <div class="page-form__wrapper">
-          <h2 class="page-form__subtitle title">
-            Оставьте свой отзыв
-          </h2>
-          <div class="page-form__text text">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях
+      <div class="page-form">
+        <section class="page-form__title">
+          <div class="page-form__wrapper">
+            <h2 class="page-form__subtitle title">
+              Оставьте свой отзыв
+            </h2>
+            <div class="page-form__text text">
+              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+    </div>
 
       <form  class="form" action="https://echo.htmlacademy.ru."
         method="post">
-        <fieldset class="form-id--wrapper">
+        <fieldset class="id-wrapper">
           <legend class="name-title title">
             Представьтесь:
           </legend>
@@ -93,38 +95,38 @@
               <input class="surname-field title" type="text" name="surname" value placeholder="Иванов" id="form-surname">
             </p>
             <p class="form-item form-item--patronym">
-              <label class="item-patronym" for="form-patronym" >Отчество:
+              <label class="item-patronym" for="form-patronym">Отчество:
               </label>
               <input class="patronym-field title" type="text" name="patronym" value placeholder="Александрович" id="form-patronym">
             </p>
           </div>
         </fieldset>
 
-        <fieldset class="form-contact">
-          <legend class="form-title--contact">
+        <div class="form-contact">
+          <div class="form-contact__title">
             <span class="form-contact__line">
               Контактная информация:
             </span>
-          </legend>
-          <div class="form-contact--wrapper">
-            <div class="form-item--contact">
+          </div>
+          <div class="form-contact__wrapper">
+            <div class="form-contact__item">
               <label class="item-phone" for="form-phone">
-                <span class="item-phone--none">
+                <span class="item-phone__none">
                   Контактный
                 </span>
                 телефон<sup>*</sup>:
               </label>
               <input class="phone-field " type="tel" name="phone" value placeholder="Введите телефон " id="form-phone" required>
             </div>
-            <div class="form-item--contact">
+            <div class="form-contact__item">
               <label class="item-email" for="form-email"> Электронная почта<sup>*</sup>:
               </label>
               <input class="email-field" type="email" name="email" value placeholder="Введите e-mail" id="form-email" required>
             </div>
           </div>
-        </fieldset>
+        </div>
         <fieldset class="form-impression">
-          <legend class="form-title--impression">
+          <legend class="form-impression__title">
             Ваше общее впечатление:
           </legend>
           <div class="form-impression__list">
@@ -146,46 +148,47 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form-sights">
-          <legend class="form-title--sights">
+        <div class="form-sights">
+          <div class="form-sights__title">
             Посещенные достопримечательности:
-          </legend>
+          </div>
           <div class="form-sights__list">
-            <div class="form-option--sights">
+            <div class="form-sights__option">
               <input class=" item-sights item-devil" type="checkbox" name="form-sights"
               id="devil" checked>
               <label class="devil-checkbox" for="devil">
                 Мост Дьявола
               </label>
             </div>
-            <div class="form-option--sights">
+            <div class="form-sights__option">
               <input class="item-sights item-mountain" type="checkbox" name="form-sights"
               id="mountain" checked>
               <label  class="mountain-checkbox" for="mountain">Гора-Колокол
               </label>
             </div>
-            <div class="form-option--sights">
+            <div class="form-sights__option">
               <input class=" item-sights item-park" type="checkbox" name="form-sights" id="park" checked>
               <label class="park-checkbox" for="park">
                 Слайд-парк
               </label>
             </div>
-            <div class="form-option--sights">
+            <div class="form-sights__option">
               <input class="item-sights item-red-mountain" type="checkbox" name="form-sights" id="red-mountain">
               <label class="red-mountain-checkbox" for="red-mountain">
                 Красные скалы
               </label>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="form-emotion">
-          <legend class="form-title--emotion">
+        </div>
+        <div class="form-emotion">
+          <div class="form-emotion__title">
             Опишите свои эмоции:
-          </legend>
-          <textarea class="emotion-filds bg-form-grey title" name="form-text" cols="22" rows="7">
-            Опишите подробно все свои  восторги
+          </div>
+          <div class="form-emotion__wrapper">
+          <textarea class="emotion-filds bg-form-grey title" name="form-text"  placeholder="Опишите подробно все свои  восторги" cols="22" rows="7">
           </textarea>
-        </fieldset>
+        </div>
+        </div>
         <div class="button-wrapper">
           <button class="revocation_button button" type="submit" >
             Отправить отзыв
@@ -238,15 +241,15 @@
     </footer>
 
     <div class="form-popup">
-      <div class="form-popup--wrapper">
+      <div class="form-popup__wrapper">
         <h3 class="form-popup__title">Что-то пошло не так!</h3>
         <p class="form-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="popup-button--ok" type="button"> ОК</button>
+        <button class="form-popup-button-ok" type="button"> ОК</button>
       </div>
     </div>
 
     <div class="form-popup">
-      <div class="form-popup--wrapper">
+      <div class="form-popup__wrapper">
         <h3 class="form-popup__title">
           Ваш отзыв отправлен!
         </h3>

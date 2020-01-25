@@ -1,6 +1,6 @@
-  .form-popup {
-    display: none;
-  }
+.form-popup {
+  display: none;
+}
 
 @media (max-width: $mobile-width-only) {
   .form-popup {
@@ -11,13 +11,9 @@
     box-shadow: 1px 7px 15px 0 rgba(0, 1, 1, 0.15);
   }
 
-  .form-popup--wrapper {
+  .form-popup__wrapper {
     display: none;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
   }
 
   .form-popup__title {
@@ -40,7 +36,7 @@
     width: 70%;
   }
 
-  .popup-button--ok {
+  .form-popup-button-ok {
     width: 180px;
     height: 58px;
     background-color: #81b3d2;
