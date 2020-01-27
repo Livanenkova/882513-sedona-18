@@ -174,6 +174,7 @@
     height: 260px;
     width: 100%;
     background-image: url("../img/main-city-mobile@1x.jpg");
+    background-color: #d19a7b;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/main-city-mobile@2x.jpg");
@@ -246,6 +247,7 @@
   .town-img {
     height: 256px;
     background-image: url("../img/main-city-tablet@1x.jpg");
+    background-color: #d19a7b;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/main-city-tablet@2x.jpg");
